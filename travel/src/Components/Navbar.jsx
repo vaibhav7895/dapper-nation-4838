@@ -3,10 +3,16 @@ import { Link } from "react-router-dom"
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBorderNone, faCircleChevronDown, faEnvelope, faHeart, faUser, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { Button } from '@chakra-ui/button'
+import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from '@chakra-ui/modal'
+import { useDisclosure } from '@chakra-ui/hooks'
+import { Box, Divider } from '@chakra-ui/layout'
+import { Input } from '@chakra-ui/input'
 const Navbar = () => {
+    const { isOpen, onOpen, onClose } = useDisclosure()
   const [isMobile, setIsMobile] = useState(false)
   const [show, setShow] = useState(false)
-  const [inputshow,setinputshow]=useState(true)
+  const [inputshow, setinputshow] = useState(true)
   const handledropdown = () => {
     setShow(!show)
   }
@@ -16,13 +22,13 @@ const Navbar = () => {
         <img width={"5%"} height={"100%"} style={{ borderRadius: "50%" }} src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000" className='logo' alt="" />
         {/* <h3 className='logo'>Logo</h3> */}
         <div >
-        <input width="100px" style={{color:"teal",borderRadius:"20px",borderColor:"teal"}} className='inputbox' type="text" />
+          <input width="100px" style={{ color: "teal", borderRadius: "20px", borderColor: "teal" }} className='inputbox' type="text" />
         </div>
-       
+
         <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
           onClick={() => setIsMobile(false)}
         >
-          <Link>
+          <Link to={"/"}>
             <li className='home'>Home</li>
           </Link>
           <Link>
@@ -39,9 +45,34 @@ const Navbar = () => {
           <Link>
             <li className='contact1'>Contact</li>
           </Link>
-          <Link>
-            <li className='admin'>Admin</li>
-          </Link>
+          <Button className='btn' onClick={onOpen} style={{backgroundColor:"teal",color:"white"}}>
+            {/* <li className='admin'>Admin</li> */}
+            <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
+              <ModalOverlay />
+              <ModalContent>
+                <ModalHeader style={{margin:"auto",color:"teal"}}>Login As Admin</ModalHeader>
+                <ModalCloseButton />
+                <Box>
+                  <Input type="text" placeholder="email"  style={{marginTop:"10px"}}/>
+                 
+                  <Input type="text" placeholder="password" style={{marginTop:"10px"}}/>
+                  
+                 <Box style={{margin:"auto",height:"auto",width:"155px",marginTop:"30px"}}>
+                     <Button style={{backgroundColor:"teal"}}>Login As Admin</Button>
+                 </Box>
+                  
+                </Box>
+                <ModalBody pb={6}>
+                  {/* <lorem count={2} /> */}
+                </ModalBody>
+
+                <ModalFooter>
+                  
+                </ModalFooter>
+              </ModalContent>
+            </Modal>
+            Admin
+          </Button>
           <Link>
             <li className='like'>
               <FontAwesomeIcon icon={faHeart} />
@@ -62,8 +93,8 @@ const Navbar = () => {
         </button>
       </DIV>
       {
-        show && <select className='select' name="" id="" style={{ color: "white", position: "relative", backgroundColor: "teal" ,height:"auto",width:"100px",marginLeft:"60px"}}>
-           <option value="">Select</option>
+        show && <select className='select' name="" id="" style={{ color: "white", position: "relative", backgroundColor: "teal", height: "auto", width: "100px", marginLeft: "60px" }}>
+          <option value="">Select</option>
           <option value="">1</option>
           <option value="">2</option>
           <option value="">3</option>
@@ -116,6 +147,9 @@ const DIV = styled.div`
       position:absolute;
       top:15px;
       left: 35px;
+    }
+    .btn{
+      background-color: #005469;
     }
    .nav-links{
     display: none;

@@ -1,4 +1,14 @@
 import React from 'react'
+
+
+const HomePage = () => {
+  return (
+    <div>HomePage</div>
+  )
+}
+
+export default HomePage
+
 import {Box,Image,Square,SimpleGrid,Center,GridItem,Grid,Text,Container,Flex,Heading,Button} from "@chakra-ui/react";
 function HomePage() {
   return (
