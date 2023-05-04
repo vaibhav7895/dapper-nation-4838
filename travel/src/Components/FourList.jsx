@@ -36,7 +36,7 @@ export const FourList = ({ h1, heading, allDivsArr }) => {
                 <h2>{item.name}</h2>
                 <h2>Applicable on Base bank</h2>
               </div>
-              <div></div>
+              <div>hey</div>
             </div>
           );
         })}
