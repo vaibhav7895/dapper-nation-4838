@@ -7,10 +7,7 @@ import SignUp from "./Pages/SignUp"
 function App() {
   return (
     <div className="App">
-      {/* <Login/> */}
-      <Destination/>
-      
-      {/* <SignUp/> */}
+    <Login/>
     </div>
   );
 }
