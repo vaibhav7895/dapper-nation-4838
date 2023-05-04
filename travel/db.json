@@ -1,19 +1,184 @@
 {
-  "posts": [
+  "Destinations": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "City": "Ladakh",
+      "Country": "India",
+      "Duration": 5,
+      "Price": 23600,
+      "Ratings": 4.5,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1185/Zanskar.jpg?crop=134:207&downsize=134:207"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "City": "Kashmir",
+      "Country": "India",
+      "Duration": 4,
+      "Price": 21000,
+      "Ratings": 3.5,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/3766/Picturesque%20view%20of%20snow-covered%20hills%20in%20Gulmarg.jpeg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 3,
+      "City": "Himachal",
+      "Country": "India",
+      "Duration": 6,
+      "Price": 22000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/4194/Explore%20the%20offbeat%20Kinnaur%20region.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 4,
+      "City": "Kereala",
+      "Country": "India",
+      "Duration": 6,
+      "Price": 12000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/4945/backwater-allepey.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 5,
+      "City": "Coorgy/Ooty",
+      "Country": "India",
+      "Duration": 10,
+      "Price": 4000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1252/Beautiful%20view%20of%20the%20green%20valley.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 6,
+      "City": "Bangkok",
+      "Country": "Thailand",
+      "Duration": 12,
+      "Price": 7000,
+      "Ratings": 3,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/6555/phuket11.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 7,
+      "City": "Goa",
+      "Country": "India",
+      "Duration": 23,
+      "Price": 10000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1328/Stunning%20Sinquerim%20Beach.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 8,
+      "City": "North-East",
+      "Country": "India",
+      "Duration": 12,
+      "Price": 24000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1215/Gangtok1.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 9,
+      "City": "Maldives",
+      "Country": "Maldives",
+      "Duration": 15,
+      "Price": 6000,
+      "Ratings": 5,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1993/Aerial%20view%20of%20Iru%20Fushi.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 10,
+      "City": "Andaman",
+      "Country": "India",
+      "Duration": 23,
+      "Price": 30000,
+      "Ratings": 3,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1339/Port-Blair%20Andaman.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 11,
+      "City": "Rajasthan",
+      "Country": "India",
+      "Duration": 11,
+      "Price": 8000,
+      "Ratings": 5,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1325/Udaipur-Heritage.jpg?crop=134:207&downsize=134:207"
+    },
+    {
+      "id": 12,
+      "City": "Lakshadweep",
+      "Country": "India",
+      "Duration": 23,
+      "Price": 9000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/4896/La%20Casta%20Cruise.jpg?crop=156:227&downsize=156:227"
+    },
+    {
+      "id": 13,
+      "City": "Curepipe",
+      "Country": "Mauritius",
+      "Duration": 17,
+      "Price": 4000,
+      "Ratings": 3,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/2004/Ile-Aux-Cerf.jpg?crop=156:227&downsize=156:227"
+    },
+    {
+      "id": 14,
+      "City": "Gujarat",
+      "Country": "India",
+      "Duration": 8,
+      "Price": 7000,
+      "Ratings": 2,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1394/Enjoy%20a%20camel%20ride%20at%20the%20White%20Desert.jpg?crop=370:240?crop=156:227&downsize=156:227"
+    },
+    {
+      "id": 15,
+      "City": "Maharastra",
+      "Country": "India",
+      "Duration": 9,
+      "Price": 23000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1268/mumbai-harbour.jpg?crop=156:227&downsize=156:227"
+    },
+    {
+      "id": 16,
+      "City": "Uttrakhand",
+      "Country": "India",
+      "Duration": 10,
+      "Price": 21000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1315/Nainital_Ekesh-Tiwari.jpg?crop=156:227&downsize=156:227"
+    },
+    {
+      "id": 17,
+      "City": "Cape Town",
+      "Country": "South Africa",
+      "Duration": 11,
+      "Price": 13000,
+      "Ratings": 4,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/2547/cape-town.jpg?crop=156:227&downsize=156:227"
+    },
+    {
+      "id": 18,
+      "City": "Giza",
+      "Country": "Egypt",
+      "Duration": 7,
+      "Price": 22000,
+      "Ratings": 5,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/644/Cairo-2.jpg?crop=156:227&downsize=156:227"
+    },
+    {
+      "id": 19,
+      "City": "Melbourne",
+      "Country": "Australia",
+      "Duration": 8,
+      "Price": 21000,
+      "Ratings": 5,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/61/Opera-Bar.jpg?crop=156:227&downsize=156:227"
+    },
+    {
+      "id": 20,
+      "City": "Kanyakumari",
+      "Country": "India",
+      "Duration": 6,
+      "Price": 6000,
+      "Ratings": 3,
+      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1369/Verdant%20tea%20plantations%20of%20Munnar.jpg?crop=134:207&downsize=134:207"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
