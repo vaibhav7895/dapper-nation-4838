@@ -9,27 +9,16 @@ import Nav from './Pages/Admin';
 
 
 import HomePage from './Pages/HomePage';
-
+import Admin from "./Pages/Admin"
+import Destination from './Pages/Destination'
 function App() {
   return (
-    <div className="App">
-      {/* <Footer/> */}
-      <HomePage/>
-
-
-
-function App() {
-  return (
-    <>
-    
-     <div className="App">
-     
-     <Nav/>
-     
+    <div>
+    <Destination/>
     </div>
-    </>
-   
-  );
+  )
 }
+ 
+    
 
 export default App;
