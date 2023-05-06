@@ -13,21 +13,10 @@ import HomePage from './Pages/HomePage';
 function App() {
   return (
     <div className="App">
-      {/* <Footer/> */}
+      
       <HomePage/>
-
-
-
-function App() {
-  return (
-    <>
-    
-     <div className="App">
-     
-     <Nav/>
-     
+      <Footer/>
     </div>
-    </>
    
   );
 }

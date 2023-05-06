@@ -5,7 +5,7 @@ function Footer() {
     <>
      <Container maxW={"100%"}  >
         
-        <Image w="100%"  height={{base:"300px", md:"450px"}}  src="https://i.ytimg.com/vi/82K3--P3Lng/maxresdefault.jpg"></Image>
+        {/* <Image w="100%"  height={{base:"300px", md:"450px"}}  src="https://i.ytimg.com/vi/82K3--P3Lng/maxresdefault.jpg"></Image> */}
         {/* <Text fontSize="4xl" w={{base:"50%",md:"100%"}} h={{base:"350px",md:"450px"}} backgroundImage={"https://i.ytimg.com/vi/82K3--P3Lng/maxresdefault.jpg"} fontWeight="bold">Subscribe To Our Newsletter</Text>     */}
 
     </Container> 
@@ -51,6 +51,15 @@ function Footer() {
                         <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
                             Contact Us
                         </Text>
+                        <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
+                        veniam
+                        </Text>
+                        <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
+                        ipsum 
+                        </Text>
+                        <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
+                        Lorem 
+                        </Text>
                         
                     </Box>
                     <Box w="50%" ml="15%"  textAlign={{base:"center",md:"left"}} >
@@ -69,6 +78,18 @@ function Footer() {
                         </Text>
                         <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
                             Our  Partners
+                        </Text>
+                        <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
+                        commodo 
+                        </Text>
+                        <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
+                        ullamco
+                        </Text>
+                        <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
+                        adipiscing 
+                        </Text>
+                        <Text color="grey" fontSize={{base:"sm", md:"xs"}} fontWeight={"bold"} mt={{base:"0%",md:"5%"}}>
+                        nostrud
                         </Text>
                     </Box>
                     <Box  w="80%" textAlign={{base:"center",md:"left"}}>
