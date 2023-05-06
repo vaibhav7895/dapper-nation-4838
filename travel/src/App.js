@@ -1,34 +1,38 @@
 
+import { useSelector } from 'react-redux';
 import './App.css';
+
 import Footer from './Components/Footer';
-
 import Navbar from './Components/Navbar';
-import WithSubnavigation from './Components/Navbar';
-import Nav from './Pages/Admin';
-
-
-
-import HomePage from './Pages/HomePage';
-
-function App() {
-  return (
-    <div className="App">
-      {/* <Footer/> */}
-      <HomePage/>
-
-
+import MainRoutes from './Pages/MainRoutes';
+import Nav from './Components/Adminnavbar';
+import AdminRoutes from './Pages/Admin/AdminRoutes';
+import { BrowserRouter } from 'react-router-dom';
+import SimpleSidebar from './Components/Sidebar';
+import { Box } from '@chakra-ui/react';
 
 function App() {
+  const admin=useSelector((store)=>{
+    return store.AdminReducer.admin
+  })
+  console.log(admin)
   return (
-    <>
-    
-     <div className="App">
+    <BrowserRouter>
+    {!admin ? <div className="App">
+      <Navbar />
+      <MainRoutes />
+      <Footer />
+    </div> : <div className="App" style={{display:"flex"}}>
+    <SimpleSidebar style={{width:"20%"}}/>
+    <Box  style={{width:"80%"}}>
+    <Nav />
+      <AdminRoutes />
+    </Box>
      
-     <Nav/>
-     
-    </div>
-    </>
+    </div>}
+    </BrowserRouter>
    
+  
   );
 }
 

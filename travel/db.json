@@ -143,42 +143,6 @@
       "Price": 21000,
       "Ratings": 4,
       "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1315/Nainital_Ekesh-Tiwari.jpg?crop=156:227&downsize=156:227"
-    },
-    {
-      "id": 17,
-      "City": "Cape Town",
-      "Country": "South Africa",
-      "Duration": 11,
-      "Price": 13000,
-      "Ratings": 4,
-      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/2547/cape-town.jpg?crop=156:227&downsize=156:227"
-    },
-    {
-      "id": 18,
-      "City": "Giza",
-      "Country": "Egypt",
-      "Duration": 7,
-      "Price": 22000,
-      "Ratings": 5,
-      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/644/Cairo-2.jpg?crop=156:227&downsize=156:227"
-    },
-    {
-      "id": 19,
-      "City": "Melbourne",
-      "Country": "Australia",
-      "Duration": 8,
-      "Price": 21000,
-      "Ratings": 5,
-      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/61/Opera-Bar.jpg?crop=156:227&downsize=156:227"
-    },
-    {
-      "id": 20,
-      "City": "Kanyakumari",
-      "Country": "India",
-      "Duration": 6,
-      "Price": 6000,
-      "Ratings": 3,
-      "images": "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1369/Verdant%20tea%20plantations%20of%20Munnar.jpg?crop=134:207&downsize=134:207"
     }
   ]
 }
