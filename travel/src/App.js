@@ -8,11 +8,13 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <div className="App">
-      {/* <HomePage /> */}
-      <Navbar />
-      <FlightBooking />
-      <Footer />
+
+      
+      <HomePage/>
+      <Footer/>
     </div>
+   
+
   );
 }
  
