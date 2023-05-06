@@ -7,7 +7,7 @@ const Pagination = () => {
   const { total } = useSelector((store) => {
     return store.ProductReducer;
   });
-  console.log(total)
+ 
   const getCurrentPage = (page) => {
     page = Number(page);
 
@@ -20,7 +20,7 @@ const Pagination = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [page, setPage] = useState(getCurrentPage(searchParams.get("page")));
-
+  
   const handlePage = (val) => {
     setPage((prev) => prev + val);
   };
@@ -43,7 +43,7 @@ const Pagination = () => {
           <span />
           <Button>{page}</Button> <span />
           <Button
-            isDisabled={page === Math.ceil(total / 12)}
+            isDisabled={page === Math.ceil(total / 8)}
             onClick={() => handlePage(+1)}
           >
             Next
