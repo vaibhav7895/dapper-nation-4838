@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Box,
   Container,
@@ -24,58 +24,74 @@ import { getProducts } from '../Redux/ProductReducer/action';
 import Destinationcard from '../Components/Destinationcard';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import Pagination from '../Filter/Pagination';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer'
+import { useRef } from 'react';
 const Destination = () => {
-  const [searchParams] = useSearchParams();
+  const [searchParams,setSearchParams] = useSearchParams();
   const location = useLocation();
   const dispatch = useDispatch();
+  const [order,setOrder]=useState("")
+  
 
   const { destinations, isLoading, isError, total } = useSelector((store) => {
     return store.ProductReducer;
   });
- 
+  const handleSort = (e) => {
+    setOrder(e.target.value);
+  };
   let Obj = {
     params: {
-      category: searchParams.getAll("category"),
+      
       _page: searchParams.get("page"),
-      _sort: searchParams.get("order") && "price",
+      _sort: searchParams.get("order") && "Price",
       _order: searchParams.get("order"),
     },
   };
 
   useEffect(() => {
+    let params={
+      order
+     }
+     
+     setSearchParams(params)
     dispatch(getProducts(Obj));
-    console.log(total);
-  }, [location.search]);
+    
+  }, [location.search,order]);
   
   
   
 
   return (
-    <Container maxW={"95%"}>
+    
+    <Container maxW={"100%"}>
+      <Navbar/>
       <Box>
         <Heading lineHeight={1.1}
-          fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
-          marginTop={"100px"}
-        >Destinations
+          textAlign={"center"}
+          fontWeight= "bold"
+          fontSize={{ base: "3xl", md:"5xl", lg: "5xl" }}
+          
+          backgroundImage={"https://i.pinimg.com/originals/3b/fd/13/3bfd131d661215be9eb16819c8e8b34d.jpg"}
+          height={"300px"}
+          backgroundPosition="center"
+          backgroundSize="cover"
+        ><Text paddingTop={"100px"}>Destinations</Text>
         </Heading>
         <Flex justifyContent={"space-between"}>
           <Box>
-            <Heading
-              fontWeight={600}
-              fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
-              marginTop={"100px"}
-              marginLeft={"70px"}
-            >Popular Destinations</Heading>
+          <Text marginTop={"100px"} marginLeft={"90px"} textAlign={"center"} fontSize={{ base: "3xl", md: "5xl" }} fontWeight="bold">
+                    Popular <Text as="span" color="#1071DB">Destination</Text>
+                </Text>
           </Box>
-          <Box border={"1px solid red"}
-            marginRight={"100px"}
+          <Box 
+            marginRight={"150px"}
             marginTop={"110px"}
           >
-            <Select placeholder='Select option' fontSize={"xl"}>
-              <option value='option1'>Option 1</option>
-              <option value='option2'>Option 2</option>
-              <option value='option3'>Option 3</option>
+            <Select placeholder='Select' fontSize={"xl"}  onChange={handleSort}>
+              <option value='asc'>Price:low to high</option>
+              <option value='desc'>Price:High to low</option>
+              
             </Select>
           </Box>
         </Flex>
@@ -119,6 +135,7 @@ const Destination = () => {
 
       </Box>
       <Pagination/>
+      <Footer />
     </Container>
 
   )
