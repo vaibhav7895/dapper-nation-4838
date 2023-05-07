@@ -5,7 +5,7 @@
       "City": "Kashmir",
       "Country": "India",
       "Duration": "3 Nights 2 Days",
-      "Price": 21000,
+      "Price": "21000",
       "Ratings": "⭐⭐⭐⭐⭐",
       "images": "https://cdn.pixabay.com/photo/2017/03/16/18/03/landscape-2149844_960_720.jpg"
     },
@@ -136,15 +136,6 @@
       "images": "https://cdn.pixabay.com/photo/2019/07/08/18/14/background-4325274_960_720.jpg"
     },
     {
-      "id": 17,
-      "City": "Paris",
-      "Country": "France",
-      "Duration": "7 Nights 8 Days",
-      "Price": 13000,
-      "Ratings": "⭐⭐⭐⭐",
-      "images": "https://cdn.pixabay.com/photo/2015/10/06/18/26/eiffel-tower-975004_960_720.jpg"
-    },
-    {
       "id": 18,
       "City": "Giza",
       "Country": "Egypt",
@@ -152,24 +143,6 @@
       "Price": 22000,
       "Ratings": "⭐⭐⭐",
       "images": "https://cdn.pixabay.com/photo/2017/03/20/14/33/pyramids-2159286_960_720.jpg"
-    },
-    {
-      "id": 19,
-      "City": "Melbourne",
-      "Country": "Australia",
-      "Duration": "5 Nights 4 Days",
-      "Price": 21000,
-      "Ratings": "⭐⭐⭐",
-      "images": "https://cdn.pixabay.com/photo/2015/09/22/10/11/melbourne-951349_960_720.jpg"
-    },
-    {
-      "id": 20,
-      "City": "Kanyakumari",
-      "Country": "India",
-      "Duration": "3 Nights 2 Days",
-      "Price": 6000,
-      "Ratings": "⭐⭐⭐",
-      "images": "https://cdn.pixabay.com/photo/2017/02/02/18/03/temple-2033409_960_720.jpg"
     }
   ],
   "registeredUser": [

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { BsThreeDotsVertical } from "@chakra-ui/icons"
 import {Box,Image,SimpleGrid,Text,Container,Button} from "@chakra-ui/react";
 import { Avatar,WrapItem,Wrap } from '@chakra-ui/react'
@@ -588,6 +589,7 @@ function HomePage() {
         </Box>
      
     </>
+
   )
 }
 
