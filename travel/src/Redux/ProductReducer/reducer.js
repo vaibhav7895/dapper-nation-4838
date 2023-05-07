@@ -5,7 +5,7 @@ const initialState = {
     isError: false,
     total: "",
     destinations: [],
-    flights: []
+    reviews: []
 }
 
 export const reducer = (state = initialState, { type, payload }) => {
