@@ -27,6 +27,8 @@ export const Download = () => {
               <img
                 src="https://res4.nbstatic.in/static/images/google-play-badges.svg"
                 alt=""
+                width={"300px"}
+                
               />
               <img
                 src="https://res4.nbstatic.in/static/images/app-store.svg"
@@ -39,11 +41,14 @@ export const Download = () => {
                 height: "100px",
                 borderRadius: "10px",
               }}
+
+              style={{ width: "200px", height: "200px", borderRadius: "10px" }}
+
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTohXMmn4t3aKSiNr6fl-vcE53wLrp1Cb6JSQ&usqp=CAU"
               alt=""
             />
           </div>
-          <h3>WWW.OutdoorLife.com</h3>
+          <h3 >WWW.OutdoorLife.com</h3>
         </div>
       </div>
     </DIV>
@@ -52,9 +57,11 @@ export const Download = () => {
 
 const DIV = styled.div`
   #phone {
+
     width: 25%;
     margin-left: 50px;
     /* border: 1px solid white; */
+
   }
   #main {
     background-color: #1071db;
