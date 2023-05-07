@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Box,
 Image,
 Flex,
@@ -7,7 +7,9 @@ Text,Button, Grid,} from "@chakra-ui/react"
 
 const Destinationcard = ({id,City,Country,Duration,Price,Ratings,images}) => {
     
-
+    const handleClick=()=>{
+        
+    }
   return (
     <Box
                             backgroundImage={images}
@@ -26,7 +28,9 @@ const Destinationcard = ({id,City,Country,Duration,Price,Ratings,images}) => {
                                 <Text color="white" fontWeight="bold" fontSize={{ base: "md", md: "xl" }}>{City} {Country}
                                     
                                     </Text>
-                                    <Text color="white"  fontWeight="bold" fontSize="sm">{Ratings}</Text>
+                                    <Text color="white"  fontWeight="bold" fontSize="sm">{Ratings}
+                                    </Text>
+
                                 </Flex>
                                 <Text ml={"0px"} color="white" fontWeight="bold" fontSize={{ base: "md", md: "xl" }}>{Duration}
                                     
