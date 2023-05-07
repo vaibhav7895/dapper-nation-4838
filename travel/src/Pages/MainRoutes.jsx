@@ -1,8 +1,17 @@
 import React from 'react'
-import {Routes,Route} from "react-router-dom"
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './HomePage'
+import Adminhomepage from './Admin/Adminhomepage'
+import { Text } from '@chakra-ui/react'
+
+
+
 const MainRoutes = () => {
   return (
-   
+    <Routes>
+      <Route path='/' element={<HomePage/>}/>
+     <Route path="*" element={<Text>404 Page Not Found</Text>}/>
+    </Routes>
   )
 }
 

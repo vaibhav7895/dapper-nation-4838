@@ -12,27 +12,29 @@ import SimpleSidebar from './Components/Sidebar';
 import { Box } from '@chakra-ui/react';
 
 function App() {
-  const admin=useSelector((store)=>{
+  const admin = useSelector((store) => {
     return store.AdminReducer.admin
   })
   console.log(admin)
   return (
     <BrowserRouter>
-    {!admin ? <div className="App">
-      <Navbar />
-      <MainRoutes />
-      <Footer />
-    </div> : <div className="App" style={{display:"flex"}}>
-    <SimpleSidebar style={{width:"20%"}}/>
-    <Box  style={{width:"80%"}}>
-    <Nav />
-      <AdminRoutes />
-    </Box>
-     
-    </div>}
+      {!admin ? <div className="App">
+        <Navbar />
+        {/* <MainRoutes /> */}
+        <Footer />
+      </div> : 
+      <div className="App" style={{ display: "flex" }}>
+        <SimpleSidebar style={{ width: "20%" }} />
+        <Box style={{ width: "80%" }}>
+          <Nav />
+          <AdminRoutes />
+        </Box>
+
+      </div>
+      }
     </BrowserRouter>
-   
-  
+
+
   );
 }
 
