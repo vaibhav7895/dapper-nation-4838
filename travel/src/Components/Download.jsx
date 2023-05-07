@@ -34,7 +34,11 @@ export const Download = () => {
               />
             </div>
             <img
-              style={{ width: "100px", height: "100px", borderRadius: "10px" }}
+              style={{
+                width: "100px",
+                height: "100px",
+                borderRadius: "10px",
+              }}
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTohXMmn4t3aKSiNr6fl-vcE53wLrp1Cb6JSQ&usqp=CAU"
               alt=""
             />
@@ -49,6 +53,8 @@ export const Download = () => {
 const DIV = styled.div`
   #phone {
     width: 25%;
+    margin-left: 50px;
+    /* border: 1px solid white; */
   }
   #main {
     background-color: #1071db;
@@ -63,8 +69,8 @@ const DIV = styled.div`
     text-align: center;
     margin-top: 10px;
     /* border: 1px solid white; */
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 100px;
+    padding-right: 150px;
     display: flex;
     flex-direction: column;
     gap: 30px;

@@ -1,9 +1,8 @@
-import React from 'react'
-import {Routes,Route} from "react-router-dom"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import FlightBooking from "./FlightBooking";
 const MainRoutes = () => {
-  return (
-   
-  )
-}
+  return <div></div>;
+};
 
-export default MainRoutes
+export default MainRoutes;
