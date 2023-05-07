@@ -10,7 +10,8 @@ import AdminRoutes from './Pages/Admin/AdminRoutes';
 import { BrowserRouter } from 'react-router-dom';
 import SimpleSidebar from './Components/Sidebar';
 import { Box } from '@chakra-ui/react';
-
+import Login from './Pages/Login'
+import Destination from './Pages/Destination';
 function App() {
   const admin = useSelector((store) => {
     return store.AdminReducer.admin
@@ -18,9 +19,10 @@ function App() {
   console.log(admin)
   return (
     <BrowserRouter>
+
       {!admin ? <div className="App">
         <Navbar />
-        {/* <MainRoutes /> */}
+         <MainRoutes /> 
         <Footer />
       </div> : 
       <div className="App" style={{ display: "flex" }}>
