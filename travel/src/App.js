@@ -12,6 +12,7 @@ import SimpleSidebar from './Components/Sidebar';
 import { Box } from '@chakra-ui/react';
 import Login from './Pages/Login'
 import Destination from './Pages/Destination';
+import Reviews from './Pages/Reviews';
 function App() {
   const admin = useSelector((store) => {
     return store.AdminReducer.admin
@@ -22,7 +23,7 @@ function App() {
 
       {!admin ? <div className="App">
         <Navbar />
-         <MainRoutes /> 
+         <MainRoutes/>
         <Footer />
       </div> : 
       <div className="App" style={{ display: "flex" }}>

@@ -14,7 +14,7 @@ function HomePage() {
   backgroundSize="cover"
   height={{base:"500px" ,md:"100vh"}}>
     <Box> 
-        <Text textAlign="center" color="#FB9216" fontSize={{base:"lg" ,md:"2xl"}}>Budget Travel. Rich Life</Text>
+        <Text textAlign="center" color="#FB9216" fontWeight={"bold"} fontSize={{base:"lg" ,md:"2xl"}}>Budget Travel. Rich Life</Text>
         <Text textAlign="center" color="#ffff" fontSize={{base:"3xl" ,md:"5xl"}}  fontWeight={"bold"}>Enjoy The Best Moments</Text>
         <Text textAlign="center" color="#ffff" fontSize={{base:"3xl" ,md:"5xl"}} fontWeight={"bold"}>With Outdoor Life</Text>
         <Text textAlign="center" color="#FB9216" fontWeight={"bold"} fontSize={{base:"md" ,md:"xl"}}>We have More Than 1 million Happy customer all around the world &</Text>

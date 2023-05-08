@@ -37,7 +37,7 @@ const Pagination = () => {
     <Box width={"80%"} margin="auto">
       <Center>
         <Box>
-          <Button isDisabled={page === 1} onClick={() => handlePage(-1)}>
+          <Button color={"#1071DB"} isDisabled={page === 1} onClick={() => handlePage(-1)}>
             Prev
           </Button>{" "}
           <span />
@@ -45,6 +45,7 @@ const Pagination = () => {
           <Button
             isDisabled={page === Math.ceil(total / 8)}
             onClick={() => handlePage(+1)}
+            color={"#1071DB"}
           >
             Next
           </Button>
