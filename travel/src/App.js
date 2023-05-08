@@ -11,6 +11,7 @@ import SimpleSidebar from "./Components/Sidebar";
 import { Box } from "@chakra-ui/react";
 import { FlightBooking } from "./Pages/FlightBooking";
 import { FlightCompany } from "./Pages/FlightCompany";
+import { PassangerInfo } from "./Pages/PassangerInfo";
 
 function App() {
   const admin = useSelector((store) => {
@@ -22,9 +23,7 @@ function App() {
       {!admin ? (
         <div className="App">
           <Navbar />
-          {/* <MainRoutes /> */}
-          <FlightBooking />
-          <FlightCompany />
+          <MainRoutes />
           <Footer />
         </div>
       ) : (

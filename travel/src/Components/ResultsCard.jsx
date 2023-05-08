@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import planeicon from "../image/duration.jpg";
+import { json } from "react-router-dom";
 
 export const ResultsCard = ({ data }) => {
   return (
-    <DIV style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+    <DIV
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "20px",
+        marginTop: "50px",
+        marginBottom: "50px",
+      }}
+    >
       <h2 id="head">{data.length} Search Result</h2>
-      {data.map((item) => {
+      {data.map((item, i) => {
         return (
-          <div id="card">
+          <div key={i} id="card">
             <img id="logos" src={item.image} alt="" />
             <div id="mid">
               <div id="starttime">
@@ -79,6 +88,10 @@ export const ResultsCard = ({ data }) => {
                   padding: "5px 20px 5px 20px",
                   fontWeight: "600",
                   width: "120px",
+                }}
+                onClick={() => {
+                  let info = JSON.stringify(item);
+                  localStorage.setItem("price", info);
                 }}
               >
                 Book Now

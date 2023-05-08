@@ -4,6 +4,7 @@ import { BookingBar } from "../Components/BookingBar";
 import { FourList } from "../Components/FourList";
 import { ThreeSteps } from "../Components/ThreeSteps";
 import { Download } from "../Components/Download";
+import flightimage from "../image/p1.jpg";
 
 export const FlightBooking = () => {
   // making a object for international flights data to pass it to FourList component
@@ -88,10 +89,12 @@ export const FlightBooking = () => {
   };
 
   return (
-    <DIV style={{ marginLeft: "18vh", marginRight: "18vh" }}>
-      <div id="MainDiv">
+    <DIV>
+      <h1 id="heading" style={{ paddingTop: "130px" }}>
+        Flight Booking
+      </h1>
+      <div id="MainDiv" style={{ marginLeft: "18vh", marginRight: "18vh" }}>
         {/* heading */}
-        <h1 id="heading">Flight Booking</h1>
         {/* booking bar */}
         <BookingBar />
         {/* flight details */}
@@ -111,9 +114,15 @@ const DIV = styled.div`
     /* border: 1px solid red; */
   }
   #heading {
+    background-image: url(${flightimage});
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
     text-align: center;
     font-size: 50px;
     font-weight: 700;
     padding: 30px;
+    color: white;
+    /* border: 1px solid black; */
   }
 `;
