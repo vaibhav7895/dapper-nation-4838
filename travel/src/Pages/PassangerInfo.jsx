@@ -10,10 +10,6 @@ export const PassangerInfo = () => {
 
   return (
     <DIV>
-      <h1 id="heading" style={{ paddingTop: "130px" }}>
-        Flight Booking
-      </h1>
-
       <div style={{ marginLeft: "18vh", marginRight: "18vh" }}>
         <MakeABooking />
         <h2
@@ -246,15 +242,18 @@ const DIV = styled.div`
     font-weight: 600;
     margin-top: 10px;
   }
-  .inputs:focus {
-    outline: none;
-  }
   .inputs {
     border: 1px solid gray;
     border-radius: 5px;
     font-size: 15px;
     padding: 5px;
     font-weight: 600;
+  }
+  .black {
+    color: black;
+  }
+  .inputs:focus {
+    outline: none;
   }
 
   .heading {
@@ -286,9 +285,6 @@ const DIV = styled.div`
     font-size: 20px;
     border: 2px solid #1071db;
     margin-left: 10px;
-  }
-  .black {
-    color: black;
   }
   .space {
     padding-left: 40px;

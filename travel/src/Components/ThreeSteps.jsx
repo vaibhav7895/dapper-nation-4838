@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import myimage from "../image/3stepplane.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faTicket } from "@fortawesome/free-solid-svg-icons";
+import { faCity } from "@fortawesome/free-solid-svg-icons";
 
 export const ThreeSteps = ({ name, one, two, three, data1, data2, data3 }) => {
   return (
@@ -15,21 +19,30 @@ export const ThreeSteps = ({ name, one, two, three, data1, data2, data3 }) => {
         </h2>
         <div id="steps">
           <div>
-            <h3>Icon</h3>
+            <FontAwesomeIcon
+              icon={faLaptop}
+              style={{ color: "#1071db", fontSize: "30px", margin: "auto" }}
+            />
             <div>
               <h3>{one}</h3>
               <h3>{data1}</h3>
             </div>
           </div>
           <div>
-            <h3>Icon</h3>
+            <FontAwesomeIcon
+              icon={faTicket}
+              style={{ color: "#1071db", fontSize: "30px", margin: "auto" }}
+            />
             <div>
               <h3>{two}</h3>
               <h3>{data2}</h3>
             </div>
           </div>
           <div>
-            <h3>Icon</h3>
+            <FontAwesomeIcon
+              icon={faCity}
+              style={{ color: "#1071db", fontSize: "30px", margin: "auto" }}
+            />
             <div>
               <h3>{three}</h3>
               <h3>{data3}</h3>
