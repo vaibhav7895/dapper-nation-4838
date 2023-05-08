@@ -1,4 +1,4 @@
-import { SIGNIN_FAILURE_ADMIN, SIGNIN_REQUEST_ADMIN, SIGNIN_SUCCESS_ADMIN } from "./actiontype"
+import { GOTOHOME, LOGOUT, SIGNIN_FAILURE_ADMIN, SIGNIN_REQUEST_ADMIN, SIGNIN_SUCCESS_ADMIN } from "./actiontype"
 
 const init = {
     admin: false,
@@ -13,6 +13,8 @@ export const reducer = (state = init, { type, payload }) => {
             return { ...state, isLoading: false, admin: true }
         case SIGNIN_FAILURE_ADMIN:
             return { ...state, isLoading: false, isError: true }
+            case LOGOUT:
+                return {...state,isLoading:false,admin:false}
         default:
             return state
     }

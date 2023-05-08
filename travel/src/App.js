@@ -18,34 +18,32 @@ import { PassangerInfo } from "./Pages/PassangerInfo";
 
 
 function App() {
-  // const admin = useSelector((store) => {
-  //   return store.AdminReducer.admin;
-  // });
-  // console.log(admin);
+ 
   return (
 
 
-    // <BrowserRouter>
-    //   {!admin ? (
-    //     <div className="App">
-    //       <Navbar />
-    //       <MainRoutes />
-    //       <Footer />
-    //     </div>
-    //   ) : (
-    //     <div className="App" style={{ display: "flex" }}>
-    //       <SimpleSidebar style={{ width: "20%" }} />
-    //       <Box style={{ width: "80%" }}>
-    //         <Nav />
-    //         <AdminRoutes />
-    //       </Box>
-    //     </div>
-    //   )}
 
-    // </BrowserRouter>
-    <>
-      <HomePage/>
-    </>
+
+    <BrowserRouter>
+      {!admin ? (
+        <div className="App">
+          <Navbar />
+          <MainRoutes />
+
+          <Footer />
+        </div>
+      ) : (
+        <div className="App" style={{ display: "flex" }}>
+          <SimpleSidebar style={{ width: "20%" }} />
+          <Box style={{ width: "80%" }}>
+            <Nav />
+            <AdminRoutes />
+          </Box>
+        </div>
+      )}
+
+    </BrowserRouter>
+
 
 
   );

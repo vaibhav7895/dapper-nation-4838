@@ -50,7 +50,7 @@ const Navbar = () => {
         <img width={"5%"} height={"100%"} style={{ borderRadius: "50%" }} src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000" className='logo' alt="" />
         {/* <h3 className='logo'>Logo</h3> */}
         <div >
-          <input width="100px" style={{ color: "teal", borderRadius: "20px", borderColor: "teal" }} className='inputbox' type="text" />
+          <input width="100px" style={{ color: "#1071DB", borderRadius: "20px", borderColor: "teal" }} className='inputbox' type="text" />
         </div>
 
         <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
@@ -62,9 +62,12 @@ const Navbar = () => {
           <Link to={"/destinations"}>
             <li className='about'>Destinations</li>
           </Link>
+
+          <Link >
+            <li className='contact'>Flights</li>
+
           <Link>
-            <li className='contact'>Booking </li>
-            
+
           </Link>
 
 
@@ -74,7 +77,8 @@ const Navbar = () => {
           <Link>
             <li className='contact1'>Contact</li>
           </Link>
-          <Button className='btn' onClick={onOpen} style={{backgroundColor:"teal",color:"white"}}>
+          <Box style={{marginTop:"6px"}}>
+          <Button  className='btn' onClick={onOpen} style={{backgroundColor:"#1071db",color:"white",fontSize:"20px"}}>
             {/* <li className='admin'>Admin</li> */}
             <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
               <ModalOverlay />
@@ -102,6 +106,7 @@ const Navbar = () => {
             </Modal>
             Admin
           </Button>
+          </Box>
           <Link>
             <li className='like'>
               <FontAwesomeIcon icon={faHeart} />
@@ -121,7 +126,6 @@ const Navbar = () => {
           }
         </button>
       </DIV>
-    
 
     </>
   )
@@ -134,7 +138,7 @@ const DIV = styled.div`
    justify-content: space-around;
    align-items: center;
    height: 84px;
-   background-color: teal;
+   background-color: #1071db;
    color:white;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    .logo{
@@ -171,7 +175,7 @@ const DIV = styled.div`
       left: 35px;
     }
     .btn{
-      background-color: #005469;
+      background-color: #1071db;
     }
    .nav-links{
     display: none;
@@ -183,7 +187,7 @@ const DIV = styled.div`
     position: absolute;
     display: block;
     list-style: none;
-    background-color: #005469;
+    background-color: #1071db;
     left: 0;
     top: 75px;
     transition: all 0.5s ease-out;
@@ -204,7 +208,7 @@ const DIV = styled.div`
     position: absolute;
     font-size: 30px;
     color:white;
-    background-color: #00828c;
+    background-color: #1071db;
     border: none;
     outline: none;
     top:15px;

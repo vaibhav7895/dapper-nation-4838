@@ -17,6 +17,9 @@ import {
   Center,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { useDispatch, useSelector } from 'react-redux';
+import { LOGOUT } from '../Redux/AdminReducer/actiontype';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const NavLink = ({ children }) => (
   <Link
@@ -35,11 +38,21 @@ const NavLink = ({ children }) => (
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+ const navigate=useNavigate()
+  const dispatch=useDispatch()
+  const admin=useSelector((store)=>{
+    return store.ProductReducer.admin
+  })
+  const handlelogout=()=>{
+     dispatch({type:LOGOUT})
+     navigate("/")
+  }
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Logo</Box>
+          <Box></Box>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
@@ -75,7 +88,7 @@ export default function Nav() {
                   <MenuDivider />
                   <MenuItem>Your Servers</MenuItem>
                   <MenuItem>Account Settings</MenuItem>
-                  <MenuItem>Logout</MenuItem>
+                  <Button onClick={handlelogout}> <MenuItem>Logout</MenuItem></Button>
                 </MenuList>
               </Menu>
             </Stack>
