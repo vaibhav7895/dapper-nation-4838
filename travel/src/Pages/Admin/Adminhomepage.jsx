@@ -1,6 +1,7 @@
-import { Button, Table, TableCaption, TableContainer, Tbody, Td, Tfoot, Th, Thead, Tr } from '@chakra-ui/react'
+import { Button, Table, TableCaption, TableContainer, Tbody, Td, Tfoot, Th, Thead, Tr,Link } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
+
 const Dashboard = () => {
   const [fulldata,setfulldata]=useState([])
    const [edit,setedit]=useState("")
@@ -24,16 +25,17 @@ const Dashboard = () => {
       setfulldata(newdata)
     })
   }
-  const handleedit=(id)=>{
-   fulldata.map((item,index)=>{
-      if(item.id==id){
-        setedit(item)
+  // const handleedit=(id)=>{
+  //  fulldata.map((item,index)=>{
+  //     if(item.id==id){
+  //       setedit(item)
        
-      }
-   })
-  }
+  //     }
+  //  })
+  // }
  
-  localStorage.setItem("edit",JSON.stringify(edit)) 
+ 
+  // localStorage.setItem("edit",JSON.stringify(edit)) 
   return (
     <TableContainer>
             <Table variant='striped' colorScheme='teal'>
@@ -48,7 +50,7 @@ const Dashboard = () => {
                   <Th isNumeric>Price</Th>
                   <Th>Ratings</Th>
                   <Th>Delete</Th>
-                  <Th>Edit</Th>
+                 
                 </Tr>
               </Thead>
               <Tbody>
@@ -69,7 +71,7 @@ const Dashboard = () => {
                   <Td isNumeric>{item.Price}</Td>
                   <Td>{item.Ratings}</Td>
                   <Td><Button onClick={()=>handledelete(item.id)}>Delete</Button></Td>
-                  <Td><Button onClick={()=>handleedit(item.id)}>Edit</Button></Td>
+                  
                 </Tr>
                 })
                }
