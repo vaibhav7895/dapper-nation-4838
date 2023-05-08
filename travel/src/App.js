@@ -23,9 +23,9 @@ function App() {
       {!admin ? (
         <div className="App">
           <Navbar />
-          {/* <MainRoutes /> */}
-          <FlightBooking />
-          <FlightCompany />
+          <MainRoutes />
+          {/* <FlightBooking />
+          <FlightCompany /> */}
           <Footer />
         </div>
       ) : (

@@ -1,15 +1,6 @@
 {
   "Destinations": [
     {
-      "id": 4,
-      "City": "Kerala",
-      "Country": "India",
-      "Duration": "5 Nights 4 Days",
-      "Price": 12000,
-      "Ratings": "⭐⭐⭐",
-      "images": "https://cdn.pixabay.com/photo/2016/01/14/03/26/sunset-1139296__340.jpg"
-    },
-    {
       "id": 5,
       "City": "Ooty",
       "Country": "India",
@@ -17,15 +8,6 @@
       "Price": 4000,
       "Ratings": "⭐⭐⭐⭐⭐",
       "images": "https://cdn.pixabay.com/photo/2019/12/13/07/45/landscape-4692446_960_720.jpg"
-    },
-    {
-      "id": 6,
-      "City": "Bangkok",
-      "Country": "Thailand",
-      "Duration": "4 Nights 3 Days",
-      "Price": 7000,
-      "Ratings": "⭐⭐⭐⭐⭐",
-      "images": "https://cdn.pixabay.com/photo/2016/02/04/20/36/bangkok-1179807_960_720.jpg"
     },
     {
       "id": 7,
