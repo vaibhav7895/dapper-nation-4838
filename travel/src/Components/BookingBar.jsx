@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
+import { faPlaneArrival } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import styled from "styled-components";
 
@@ -20,7 +25,7 @@ export const BookingBar = () => {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns: ".8fr .8fr",
               // border: "1px solid black",
             }}
           >
@@ -31,9 +36,21 @@ export const BookingBar = () => {
                 padding: "10px",
                 borderTopLeftRadius: "10px",
                 borderBottomLeftRadius: "10px",
+                gap: "10px",
+                textAlign: "left",
               }}
             >
-              <h1>icon</h1>
+              {/* <h1> */}
+              <FontAwesomeIcon
+                icon={faPlaneDeparture}
+                style={{
+                  color: "#1071DB",
+                  fontSize: "20px",
+                  marginRight: "10px",
+                  padding: "10px",
+                }}
+              />
+              {/* </h1> */}
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <span>Departure City</span>
                 <select id="">
@@ -48,10 +65,25 @@ export const BookingBar = () => {
                 padding: "10px",
                 borderTopRightRadius: "10px",
                 borderBottomRightRadius: "10px",
+                gap: "10px",
               }}
             >
-              <h1>icon</h1>
-              <div style={{ display: "flex", flexDirection: "column" }}>
+              <FontAwesomeIcon
+                icon={faPlaneArrival}
+                style={{
+                  color: "#1071DB",
+                  fontSize: "20px",
+                  marginRight: "10px",
+                  padding: "10px",
+                }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "left",
+                }}
+              >
                 <span>Arrival City</span>
                 <select id="">
                   <option value="1">DEL, Delhi-India</option>
@@ -68,8 +100,17 @@ export const BookingBar = () => {
                 borderRadius: "10px",
               }}
             >
-              <h1>icon</h1>
-              <div style={{ display: "flex", flexDirection: "column" }}>
+              <FontAwesomeIcon
+                icon={faCalendarDays}
+                style={{ color: "#1071DB", fontSize: "30px", padding: "5px" }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "left",
+                }}
+              >
                 <span>Departure City</span>
                 <select id="">
                   <option value="1">DEL, Delhi-India</option>
@@ -86,8 +127,17 @@ export const BookingBar = () => {
                 borderRadius: "10px",
               }}
             >
-              <h1>icon</h1>
-              <div style={{ display: "flex", flexDirection: "column" }}>
+              <FontAwesomeIcon
+                icon={faCalendarDays}
+                style={{ color: "#1071DB", fontSize: "30px", padding: "5px" }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "left",
+                }}
+              >
                 <span>Departure City</span>
                 <select id="">
                   <option value="1">DEL, Delhi-India</option>
@@ -113,7 +163,13 @@ export const BookingBar = () => {
           </div>
           <div>
             Looking for Specific Area{" "}
-            <span style={{ color: "#1071DB" }}>-logo- Explore Map</span>
+            <span style={{ color: "#1071DB" }}>
+              <FontAwesomeIcon
+                icon={faEarthAmericas}
+                style={{ color: "#5b8ee6" }}
+              />{" "}
+              Explore Map
+            </span>
           </div>
         </div>
       </div>
@@ -142,7 +198,7 @@ const DIV = styled.div`
   #bookingMid {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 2fr 0.5fr 0.5fr 50px;
+    grid-template-columns: 1.8fr 0.5fr 0.5fr 50px;
     justify-content: space-around;
     column-gap: 10px;
   }
