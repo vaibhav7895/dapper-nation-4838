@@ -37,7 +37,7 @@ import { NavLink, useSearchParams } from 'react-router-dom';
 // }
 const LinkItems = [
   { name: 'Dashboard', icon:FiGrid },
-  { name: 'adminedit', icon: FiArrowRightCircle },
+  { name: "Add", icon: FiArrowRightCircle },
   { name: 'Explore', icon: FiCompass },
   { name: 'Favourites', icon: FiStar },
   { name: 'Settings', icon: FiSettings },
