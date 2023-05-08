@@ -1,10 +1,9 @@
-import { color } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
 export const FourList = ({ h1, heading, allDivsArr }) => {
   return (
-    <DIV style={{ marginLeft: "18vh", marginRight: "18vh" }}>
+    <DIV style={{ marginBottom: "30px" }}>
       <h1>
         {h1}
         {` `}
@@ -23,20 +22,64 @@ export const FourList = ({ h1, heading, allDivsArr }) => {
         {/* mapping all data here */}
         {allDivsArr.map((item, i) => {
           return (
-            <div style={{ backgroundImage: `url(${item.image})` }}>
+            <div
+              key={i}
+              style={{
+                backgroundImage: `url(${item.image})`,
+                display: "flex",
+                flexDirection: "column",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            >
               <h2 id="discount">{`Upto ${i + 1}0% Discount`}</h2>
               <div
                 style={{
-                  backgroundColor: "white",
+                  backdropFilter: "blur(30px)",
                   margin: "10px",
                   padding: "10px",
                   borderRadius: "15px",
+                  textAlign: "left",
+                  color: "white",
+                  fontWeight: "bolder",
+                  marginTop: "auto",
                 }}
               >
-                <h2>{item.name}</h2>
-                <h2>Applicable on Base bank</h2>
+                <h2 style={{ fontSize: "20px" }}>{item.name}</h2>
+                <h2 style={{ color: "#0c264c" }}>Applicable on Base bank</h2>
+                <h2
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  Limited Offer{" "}
+                  <span style={{ color: "gold" }}>{item.stars}</span>
+                </h2>
+                <div
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <h2>
+                    From{" "}
+                    <span
+                      style={{ fontSize: "20px", color: "#0c264c" }}
+                    >{`$${item.price}`}</span>
+                  </h2>
+                  <button
+                    id="findmorebtn"
+                    style={{
+                      border: "2px solid #1071db",
+                      padding: "5px",
+                      borderRadius: "20px",
+                      paddingRight: "10px",
+                      paddingLeft: "10px",
+                    }}
+                  >
+                    Find Details
+                  </button>
+                </div>
               </div>
-              <div>hey</div>
             </div>
           );
         })}
@@ -50,7 +93,7 @@ const DIV = styled.div`
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 30px;
     text-align: left;
   }
@@ -58,6 +101,11 @@ const DIV = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
+  }
+  @media (max-width: 700px) {
+    #cards {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   #cards > div {
     /* border: 1px solid black; */
@@ -82,5 +130,8 @@ const DIV = styled.div`
     width: 70%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+  #findmorebtn:hover {
+    background-color: #1071db;
   }
 `;

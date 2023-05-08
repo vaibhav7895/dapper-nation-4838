@@ -29,6 +29,7 @@ import { IconType } from 'react-icons';
 import { ReactText } from 'react';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink, useSearchParams } from 'react-router-dom';
 
 // interface LinkItemProps {
 //   name: string;
@@ -36,7 +37,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // }
 const LinkItems = [
   { name: 'Dashboard', icon:FiGrid },
-  { name: 'Flights', icon: FiArrowRightCircle },
+  { name: "Add", icon: FiArrowRightCircle },
   { name: 'Explore', icon: FiCompass },
   { name: 'Favourites', icon: FiStar },
   { name: 'Settings', icon: FiSettings },
@@ -106,11 +107,10 @@ const SidebarContent = ({ onClose, ...rest }) => {
 //   children: ReactText;
 // }
 const NavItem = ({ icon,name, children, ...rest }) => {
-  const handleclick=()=>{
-    console.log("hello")
-  } 
+  
+  
   return (
-    <Link onClick={handleclick} href={`${name}`} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
+    <NavLink to={`${name}`}   style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
       <Flex
         align="center"
         p="4"
@@ -135,7 +135,7 @@ const NavItem = ({ icon,name, children, ...rest }) => {
         )}
         {children}
       </Flex>
-    </Link>
+    </NavLink>
   );
 };
 

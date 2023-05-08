@@ -3,7 +3,7 @@ import axios from "axios"
 
 export const getProducts=(paramObj)=>(dispatch)=>{
  dispatch({type:PRODUCT_REQUEST_PENDING})
- axios.get(`http://localhost:8080/destination`,paramObj).then((res)=>{
+ axios.get(`http://localhost:8080/Destinations?_limit=8`,paramObj).then((res)=>{
     let obj={
         data:res.data,
         total:res.headers.get("X-Total-Count")

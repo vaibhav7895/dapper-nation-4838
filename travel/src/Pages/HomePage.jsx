@@ -1,14 +1,16 @@
 import React from 'react'
+
+
 import { BsThreeDotsVertical } from "@chakra-ui/icons"
 import {Box,Image,SimpleGrid,Text,Container,Button} from "@chakra-ui/react";
 import { Avatar,WrapItem,Wrap } from '@chakra-ui/react'
-
 
 // https://images.unsplash.com/photo-1543746746-46047c4f4bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fFRyYXZlbGluZyUyMGJhbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60
 
 function HomePage() {
   return (
     <>
+
     
     <Box w="100%"  backgroundImage="https://images.unsplash.com/photo-1537387788952-cffe9f8d3090?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
         backgroundRepeat="no-repeat"
@@ -35,6 +37,7 @@ function HomePage() {
                 <Text>Search Flights</Text>
             </Box> */}
         </Box>
+
     </Box>
        
     </Box>
@@ -109,7 +112,7 @@ function HomePage() {
                     alignItems="center"
                     
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Light you Journey
                     </Text>
@@ -134,7 +137,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Try Tredetional
                     </Text>
@@ -156,7 +159,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Travels Special
                     </Text>
@@ -178,7 +181,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     City of peace
                     </Text>
@@ -217,7 +220,7 @@ function HomePage() {
         </Box>
     </Container>
 
-{/* WHY CHOOSE US PART STARTING FROM HERE_______________________-----------------------------------------_________________________________________---------------------------------------------____________________________________________________------------------------------------------>>>>>>>>>>>>>>>>>>>>>>>>>WHY CHOOSE US PART STARTING FROM HERE */}
+{/* WHY CHOOSE US PART STARTING FROM HERE________-----------------------------------------_____________---------------------------------------------_________________------------------------------------------>>>>>>>>>>>>>>>>>>>>>>>>>WHY CHOOSE US PART STARTING FROM HERE */}
 
 
     <Container maxW="80%" pt="5%" >
@@ -331,7 +334,7 @@ function HomePage() {
                                 <Image w="100%" m="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqEdHqL1QVzS2zDc5lSt3JT9Tj2ZEuA9N8MCLJ1A7xTg&usqp=CAU&ec=48600113"/>
                             </Box>
                             <Box w="70%" p="4%" m="auto" >
-                                <Image w="100%" m="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nevWmK-q0BBvAFyIiOYSvAyGLZqRDHwJX7mAOrdRXg&usqp=CAU&ec=48600113"/>
+                                <Image w="80%" m="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nevWmK-q0BBvAFyIiOYSvAyGLZqRDHwJX7mAOrdRXg&usqp=CAU&ec=48600113"/>
                             
                             </Box>
                             </Box>
@@ -367,7 +370,7 @@ function HomePage() {
                     alignItems="center"
                 >
 
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"105%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Northen Light
                     </Text>
@@ -389,7 +392,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"105%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Brander Gate
                     </Text>
@@ -411,7 +414,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"105%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Aus Beauty
                     </Text>
@@ -433,7 +436,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"105%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Surai Channel
                     </Text>
@@ -553,11 +556,13 @@ function HomePage() {
                     </Box>
                     </Box>
                     <Box  w="90%" borderRadius="5%" m="auto" h={{base:"250px",md:"350px"}} backgroundColor="#ffff" border="1px solid white">
-                    <Wrap>
-                        <WrapItem>
-                        <Avatar name='Ryan Florence' src='https://bit.ly/ryan-florence' />
+                   <Box>
+                   <Wrap >
+                        <WrapItem >
+                        <Avatar  name='Ryan Florence' src='https://bit.ly/ryan-florence' />
                         </WrapItem>
                     </Wrap>
+                   </Box>
                     <Box w="80%" m="auto">
 
                         <Text fontSize={{base:"md",md:"xl"}} color="black" fontWeight="bold" textAlign={"left"}>Mr. Andrew</Text>
@@ -603,9 +608,8 @@ function HomePage() {
         </Box>
      
     </>
+
   )
 }
 
 export default HomePage
-
-

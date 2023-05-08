@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBorderNone, faCircleChevronDown, faEnvelope, faHeart, faUser, faXmark } from '@fortawesome/free-solid-svg-icons'
@@ -8,6 +8,8 @@ import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHea
 import { useDisclosure } from '@chakra-ui/hooks'
 import { Box, Divider } from '@chakra-ui/layout'
 import { Input } from '@chakra-ui/input'
+import { useDispatch } from 'react-redux'
+import { SIGNIN_SUCCESS_ADMIN } from '../Redux/AdminReducer/actiontype'
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
   const [isMobile, setIsMobile] = useState(false)
@@ -16,6 +18,32 @@ const Navbar = () => {
   const handledropdown = () => {
     setShow(!show)
   }
+  const [email,setEmail]=useState("")
+  const [password,setPassword]=useState("")
+  const dispatch=useDispatch()
+  const navigate=useNavigate()
+  const handleemail=(e)=>{
+    setEmail(e.target.value)
+     
+  }
+  const handlepass=(e)=>{
+     setPassword(e.target.value)
+      
+   }
+  
+   const handlesubmit=(e)=>{
+        e.preventDefault()
+        if(email=="admin@gmail.com" && password=="admin"){
+         console.log("yes")
+             dispatch({type:SIGNIN_SUCCESS_ADMIN})
+          navigate("/Dashboard")
+             setEmail("")
+             setPassword("")
+        }else{
+         alert("wrong details")
+        }
+       
+   }
   return (
     <>
       <DIV className='navbar' show={show} setshow={setShow}>
@@ -53,12 +81,12 @@ const Navbar = () => {
                 <ModalHeader style={{margin:"auto",color:"teal"}}>Login As Admin</ModalHeader>
                 <ModalCloseButton />
                 <Box>
-                  <Input type="text" placeholder="email"  style={{marginTop:"10px"}}/>
+                  <Input type="text" placeholder="email"  style={{marginTop:"10px"}} value={email} name='email' onChange={handleemail}/>
                  
-                  <Input type="text" placeholder="password" style={{marginTop:"10px"}}/>
+                  <Input type="text" placeholder="password" style={{marginTop:"10px"}} name='password' value={password} onChange={handlepass}/>
                   
                  <Box style={{margin:"auto",height:"auto",width:"155px",marginTop:"30px"}}>
-                     <Button style={{backgroundColor:"teal"}}>Login As Admin</Button>
+                     <Button style={{backgroundColor:"teal"}}  onClick={handlesubmit}>Login As Admin</Button>
                  </Box>
                   
                 </Box>

@@ -56,8 +56,8 @@ export default function Nav() {
   }
   useEffect(()=>{
           getdata()
-  },[fulldata])
-  console.log(fulldata)
+  },[])
+  
   const handledelete=(id)=>{
     axios.delete(`http://localhost:8080/Destinations/${id}`).then((res)=>{
       const newdata=fulldata.filter((item,index)=>{

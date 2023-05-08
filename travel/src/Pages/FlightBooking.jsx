@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { BookingBar } from "../Components/BookingBar";
 import { FourList } from "../Components/FourList";
+import { ThreeSteps } from "../Components/ThreeSteps";
+import { Download } from "../Components/Download";
+import flightimage from "../image/p1.jpg";
 
 export const FlightBooking = () => {
   // making a object for international flights data to pass it to FourList component
@@ -35,15 +38,70 @@ export const FlightBooking = () => {
       },
     ],
   };
+
+  const FightDeals = {
+    h1: "Top",
+    heading: "Flight Deals",
+    allDivsArr: [
+      {
+        image:
+          "https://images.unsplash.com/photo-1543716091-a840c05249ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8&w=1000&q=80",
+        price: 30,
+        name: "India To New York",
+        stars: "★★★★★",
+      },
+      {
+        image:
+          "https://pyt-blogs.imgix.net/2020/08/eva-dang-EXdXLrZXS9Q-unsplash-1-scaled.jpg?auto=format&fit=crop&h=400&ixlib=php-3.3.0&w=1500&wpsize=gridlove-cover",
+        price: 40,
+        name: "India To London",
+        stars: "★★★★★",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXVzdHJhbGlhJTIwY2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80",
+        price: 70,
+        name: "India To Australia",
+        stars: "★★★★★",
+      },
+      {
+        image:
+          "https://t4.ftcdn.net/jpg/00/64/87/97/360_F_64879724_J1FYFb1lpzrWcYrO8KX6G9nMhY4MsJa2.jpg",
+        price: 85,
+        name: "India To Dubai",
+        stars: "★★★★★",
+      },
+    ],
+  };
+
+  const threestepsdata = {
+    name: "Flights",
+    one: "Select Your Flight",
+    two: "Get Multiple Fare Deals",
+    three: "Customize Book",
+    data1:
+      " offers a hassle-free holiday wherein all your travel needs are taken care of. Be it your accommodation in comfortable hotels, convenient transfers.",
+
+    data2:
+      " specific preferences, if any, on hotels, kind of holiday, etc. and MakeMyTrip offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs.",
+    data3:
+      " You can choose to book your tour packages offline by dropping a query or chatting with our travel experts for immediate support. ",
+  };
+
   return (
     <DIV>
-      <div id="MainDiv">
+      <h1 id="heading" style={{ paddingTop: "130px" }}>
+        Flight Booking
+      </h1>
+      <div id="MainDiv" style={{ marginLeft: "18vh", marginRight: "18vh" }}>
         {/* heading */}
-        <h1 id="heading">Flight Booking</h1>
         {/* booking bar */}
         <BookingBar />
         {/* flight details */}
         <FourList {...international} />
+        <FourList {...FightDeals} />
+        <ThreeSteps {...threestepsdata} />
+        <Download />
       </div>
     </DIV>
   );
@@ -56,9 +114,15 @@ const DIV = styled.div`
     /* border: 1px solid red; */
   }
   #heading {
+    background-image: url(${flightimage});
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
     text-align: center;
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 700;
     padding: 30px;
+    color: white;
+    /* border: 1px solid black; */
   }
 `;
