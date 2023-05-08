@@ -82,4 +82,11 @@ const DIV = styled.div`
     flex-direction: column;
     gap: 30px;
   }
+  @media screen and (max-width: 480px) {
+    #main {
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid white;
+    }
+  }
 `;
