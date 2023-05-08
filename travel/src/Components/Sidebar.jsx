@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import {
   IconButton,
   Box,
@@ -6,7 +6,7 @@ import {
   Flex,
   Icon,
   useColorModeValue,
-  Link,
+ 
   Drawer,
   DrawerContent,
   Text,
@@ -14,6 +14,7 @@ import {
   BoxProps,
   FlexProps,
   Image,
+ 
 } from '@chakra-ui/react';
 import {
   FiHome,
@@ -29,7 +30,9 @@ import { IconType } from 'react-icons';
 import { ReactText } from 'react';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NavLink, useSearchParams } from 'react-router-dom';
+import { NavLink, useSearchParams, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { GOTOHOME } from '../Redux/AdminReducer/actiontype';
 
 // interface LinkItemProps {
 //   name: string;
@@ -38,9 +41,11 @@ import { NavLink, useSearchParams } from 'react-router-dom';
 const LinkItems = [
   { name: 'Dashboard', icon:FiGrid },
   { name: "Add", icon: FiArrowRightCircle },
-  { name: 'Explore', icon: FiCompass },
+  { name: 'About', icon: FiCompass },
   { name: 'Favourites', icon: FiStar },
   { name: 'Settings', icon: FiSettings },
+  
+ 
 ];
 
 export default function SimpleSidebar({ children }) {
@@ -77,6 +82,7 @@ export default function SimpleSidebar({ children }) {
 // }
 
 const SidebarContent = ({ onClose, ...rest }) => {
+
   return (
     <Box
       bg={useColorModeValue('white', 'gray.900')}
@@ -90,7 +96,10 @@ const SidebarContent = ({ onClose, ...rest }) => {
         {/* <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
           Logo
         </Text> */}
-       <Image width={"50%"} height={"95%"} style={{borderRadius:"50%"}} src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000"/>
+       
+        <Image width={"50%"} height={"95%"} style={{borderRadius:"50%"}} src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000"/> 
+       
+      
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
