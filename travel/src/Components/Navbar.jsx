@@ -21,7 +21,7 @@ const Navbar = () => {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const dispatch=useDispatch()
-  const navigate=useNavigate()
+  // const navigate=useNavigate()
   const handleemail=(e)=>{
     setEmail(e.target.value)
      
@@ -62,13 +62,23 @@ const Navbar = () => {
           <Link to={"/destinations"}>
             <li className='about'>Destinations</li>
           </Link>
+
           <Link to={"/booking"} >
+
+
+          <Link >
+
             <li className='contact'>Flights</li>
+
+          <Link>
+
           </Link>
 
 
           <Link to={"/reviews"}>
+
             <li className='login'>Reviews</li>
+
           </Link>
           <Link>
             <li className='contact1'>Contact</li>
@@ -108,7 +118,9 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faHeart} />
             </li>
           </Link>
+
           <Link to={"/signup"}>
+
             <li className='user'>
               <FontAwesomeIcon icon={faUser} />
             </li>
@@ -122,7 +134,7 @@ const Navbar = () => {
           }
         </button>
       </DIV>
-     
+
     </>
   )
 }
@@ -151,7 +163,7 @@ const DIV = styled.div`
     width: 75%;
    }
 
-   .home,.about,.contact,.login,.contact1,.like,.user,.admin{
+   .home,.about,.contact,.review,.contact1,.like,.user,.admin{
     text-decoration: none;
     color:white;
     font-size: 20px;
@@ -192,7 +204,7 @@ const DIV = styled.div`
    .inputbox{
     display: none;
    }
-   .home,.about,.contact,.login,.contact1,.like,.user,.admin{
+   .home,.about,.contact,.review,.contact1,.like,.user,.admin{
     color:white;
     text-align: center;
     padding: 32px;

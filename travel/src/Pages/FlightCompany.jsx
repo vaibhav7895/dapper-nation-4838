@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { MakeABooking } from "../Components/MakeABooking";
 import { ResultsCard } from "../Components/ResultsCard";
+import flightimage from "../image/p1.jpg";
 
 export const FlightCompany = () => {
   const arr = [
@@ -43,19 +44,28 @@ export const FlightCompany = () => {
     },
   ];
   return (
-    <DIV style={{ marginLeft: "18vh", marginRight: "18vh" }}>
-      <h1 id="heading">Flight Booking</h1>
-      <MakeABooking />
-      <ResultsCard data={arr} />
+    <DIV>
+      <h1 id="heading" style={{ paddingTop: "130px" }}>
+        Flight Booking
+      </h1>
+      <div style={{ marginLeft: "18vh", marginRight: "18vh" }}>
+        <MakeABooking />
+        <ResultsCard data={arr} />
+      </div>
     </DIV>
   );
 };
 
 const DIV = styled.div`
   #heading {
+    background-image: url(${flightimage});
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
     text-align: center;
     font-size: 50px;
     font-weight: 700;
     padding: 30px;
+    color: white;
   }
 `;

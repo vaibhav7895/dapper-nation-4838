@@ -1,24 +1,52 @@
 import React from 'react'
-
 import { BsThreeDotsVertical } from "@chakra-ui/icons"
 import {Box,Image,SimpleGrid,Text,Container,Button} from "@chakra-ui/react";
-import { Avatar,WrapItem,Wrap } from '@chakra-ui/react'
+import { Avatar,WrapItem,Wrap,Link } from '@chakra-ui/react'
+import phone from "../image/iphone.png"
+import Navbar from "../Components/Navbar"
+import Footer from "../Components/Footer"
 
 // https://images.unsplash.com/photo-1543746746-46047c4f4bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fFRyYXZlbGluZyUyMGJhbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60
 
 function HomePage() {
+   
   return (
     <>
-    <Box w="100%" border="2px solid yellow" backgroundImage="https://images.unsplash.com/photo-1537387788952-cffe9f8d3090?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-  backgroundRepeat="no-repeat"
-  backgroundSize="cover"
-  height={{base:"500px" ,md:"100vh"}}>
-    <Box> 
+
+<Navbar/>
+    
+    <Box w="100%"  backgroundImage="https://images.unsplash.com/photo-1537387788952-cffe9f8d3090?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        backgroundRepeat="no-repeat"
+        backgroundSize="cover"
+        height={{base:"500px",md:"90vh"}}>
+    <Box pt="5%" > 
         <Text textAlign="center" color="#FB9216" fontSize={{base:"lg" ,md:"2xl"}}>Budget Travel. Rich Life</Text>
-        <Text textAlign="center" color="#ffff" fontSize={{base:"3xl" ,md:"5xl"}}  fontWeight={"bold"}>Enjoy The Best Moments</Text>
-        <Text textAlign="center" color="#ffff" fontSize={{base:"3xl" ,md:"5xl"}} fontWeight={"bold"}>With Outdoor Life</Text>
-        <Text textAlign="center" color="#FB9216" fontWeight={"bold"} fontSize={{base:"md" ,md:"xl"}}>We have More Than 1 million Happy customer all around the world &</Text>
-        <Text textAlign="center" color="#FB9216" fontWeight={"bold"} fontSize={{base:"md" ,md:"xl"}}>More Than 70+ destination around the globe.</Text>
+        <Text textAlign="center" color="#1071DB" fontSize={{base:"3xl" ,md:"5xl"}}  fontWeight={"bold"}>Enjoy The Best Moments</Text>
+        <Text textAlign="center" color="#1071DB" fontSize={{base:"3xl" ,md:"5xl"}} fontWeight={"bold"}>With Outdoor Life</Text>
+        <Text textAlign="center" color="#ffff" fontSize={{base:"md" ,md:"xl"}}>We have More Than 1 million Happy customer all around the world &</Text>
+        <Text textAlign="center" color="#ffff" fontSize={{base:"md" ,md:"xl"}}>More Than 70+ destination around the globe.</Text>
+
+        <Box m="auto" w="80%" height={{base:"10vh",md:"20vh" }}  borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)">
+            <Box display="flex" pt="2%" >
+            
+                <Link to="/destinations"><Button m="auto" fontWeight="bold"  w="20%" _hover={{ bg: "#1071DB" }}>
+                    
+                    ✈Flights
+                   
+                    </Button></Link>
+                    
+                <Button m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🏚Hotels</Button>
+                <Button m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🚗Transports</Button>
+            </Box>
+            
+            {/* <Box w='90%' mt='3%' display="flex" m="auto" bgColor="white" >
+                <Text>From</Text>
+                <Text>To</Text>
+                <Text>Expected Date</Text>
+                <Text>Search Flights</Text>
+            </Box> */}
+        </Box>
+
     </Box>
        
     </Box>
@@ -27,11 +55,11 @@ function HomePage() {
  
       <Box  m="auto" w={"98%"} >
 
-        <Text  fontSize={{base:"3xl",md:"5xl"}} fontWeight="bold">
+        <Text textAlign="center" fontSize={{base:"3xl",md:"5xl"}} fontWeight="bold">
         Popular <Text as="span" color="#1071DB">Destination</Text>
         </Text>
         <Box>
-        <Text fontSize={{base:"sm",md:"md"}} color="grey" fontWeight={{base:"bolder", md:"bold"}} >Explore travels and discover the most popular destinations around the world.</Text>
+        <Text textAlign="center" fontSize={{base:"sm",md:"md"}} color="grey" fontWeight={{base:"bolder", md:"bold"}} >Explore travels and discover the most popular destinations around the world.</Text>
         
         </Box>
         <Box w={{base:"95%",md:"80%"}} h="100%" pt="3%" m="auto" >
@@ -71,11 +99,11 @@ function HomePage() {
 
 {/* -----------------------------------------------------------------------------OUR TRIP PART STARTS HERE --------------------------------------------------------------------------------------------------- */}
 
-        <Text pt="2%" fontSize={{base:"3xl",md:"5xl"}} fontWeight="bold">
+        <Text textAlign="center" pt="2%" fontSize={{base:"3xl",md:"5xl"}} fontWeight="bold">
         Our <Text as="span" color="#1071DB">Trip Packages</Text>
         </Text>
         <Box>
-        <Text fontSize={{base:"sm",md:"md"}} color="grey" fontWeight={{base:"bolder", md:"bold"}} >Escape the ordinary and embark on an unforgettable adventure with us.</Text>
+        <Text textAlign="center" fontSize={{base:"sm",md:"md"}} color="grey" fontWeight={{base:"bolder", md:"bold"}} >Escape the ordinary and embark on an unforgettable adventure with us.</Text>
         
         </Box>
         
@@ -93,7 +121,7 @@ function HomePage() {
                     alignItems="center"
                     
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"118%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Light you Journey
                     </Text>
@@ -118,7 +146,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"118%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Try Tredetional
                     </Text>
@@ -140,7 +168,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"118%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Travels Special
                     </Text>
@@ -162,7 +190,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"118%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     City of peace
                     </Text>
@@ -213,7 +241,7 @@ function HomePage() {
             </Box>
 
             <Box w="100%" height="">
-                <Text  fontSize={{base:"3xl",md:"5xl"}} fontWeight="bold">
+                <Text textAlign="center" fontSize={{base:"3xl",md:"5xl"}} fontWeight="bold">
                     Why Choose<Text as="span" color="#1071DB">Us?</Text>
                 </Text>
                 <Box display="flex" w="90%"  m='auto' justifyContent={"space-between"}  height="50px">
@@ -287,36 +315,36 @@ function HomePage() {
 
 
     {/* Download our <Mobile App Section Sharts HERE--------------------------------------------------------------Download our <Mobile App Section Sharts HERE--------------------------------------------------------------Download our <Mobile App Section Sharts HERE--------------------------------------------------------------Download our <Mobile App Section Sharts HERE-------------------------------------------------------------- */}
-
+{/* https://images.unsplash.com/photo-1611791484670-ce19b801d192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ2fHxQaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 */}
         <Container mt={{base:"15%",md:"5%"}} maxW={{base:"90%",md:"80%"}}>
-            <Box display="flex" borderRadius={"2%"} backgroundColor="#1071DB"  h={{base:"400px",md:"600px"}}>
+            <Box display="flex" borderRadius={"2%"} backgroundColor="#1071DB"  h={{base:"300px",md:"600px"}}>
                 
-                    <Box w="35%" m={{base:"auto"}}  >
+                    <Box  w="35%"  m={{base:"auto",md:"auto"}}  >
 
-                        <Image borderRadius={"2%"} height={{base:"200px",md:"600px"}}  src="https://images.unsplash.com/photo-1611791484670-ce19b801d192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ2fHxQaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
+                        <Image m="auto" borderRadius={"2%"} height={{base:"200px",md:"80vh"}} float="right" src={phone}/>
                     </Box>
                 
                    
-                        <Box w="65%"   >
-                            <Text color="#fff" fontWeight={"bold"} fontSize={{base:"5xl" ,md:"6xl"}}>
+                        <Box w="65%"  >
+                            <Text color="#fff" textAlign="center" fontWeight={"bold"} fontSize={{base:"4xl" ,md:"6xl"}}>
                                 Download
                             </Text>
-                            <Text color="#fff" fontWeight={"bold"} fontSize={{base:"xl" ,md:"2xl"}}>
+                            <Text color="#fff" textAlign="center"  fontWeight={"bold"} fontSize={{base:"xl" ,md:"2xl"}}>
                                Our Mobile App
                             </Text>
-                           <Box w="65%" m="auto">
-                           <Text color="#fff"   fontSize={{base:"xs" ,md:"sm"}}>
+                           <Box w="55%" m="auto">
+                           <Text color="#fff" textAlign="center"   fontSize={{base:"10px" ,md:"sm"}}>
                             We offer a wide selection of apps to choose from, including popular social media apps, entertainment apps,  reliable, and easy to use.
                             </Text>
                             </Box>
 
                             <Box >
                             <Box w="35%" p="2%" m="auto" >
-                                <Image w="100%" m="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqEdHqL1QVzS2zDc5lSt3JT9Tj2ZEuA9N8MCLJ1A7xTg&usqp=CAU&ec=48600113"/>
+                                <Image w="100%" m="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTohXMmn4t3aKSiNr6fl-vcE53wLrp1Cb6JSQ&usqp=CAU"/>
                             </Box>
-                            <Box w="70%" p="4%" m="auto" >
-                                <Image w="80%" m="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nevWmK-q0BBvAFyIiOYSvAyGLZqRDHwJX7mAOrdRXg&usqp=CAU&ec=48600113"/>
-                            
+                            <Box display='flex' w="50%" p="4%"  m="auto">
+                                <Image w="50%"  src="https://res4.nbstatic.in/static/images/google-play-badges.svg"/>
+                                <Image w="50%"  src="https://res4.nbstatic.in/static/images/app-store.svg"/>
                             </Box>
                             </Box>
                             
@@ -335,6 +363,7 @@ function HomePage() {
         <Box w="90%" m="auto" display="flex" justifyContent="space-between">
             <Text fontWeight="bold" fontSize={{base:"4xl",md:"5xl"}}>Blogs</Text>
             <Text mt="2%" color="#1071DB" fontWeight="bold" fontSize={{base:"sm",md:"xl"}}>View All --</Text>
+            
         </Box>
         <Container maxW="85%">
         <Box pt="2%" w={{base:"100%",md:"85%"}} m="auto" >
@@ -351,7 +380,7 @@ function HomePage() {
                     alignItems="center"
                 >
 
-                <Box w="96%" m="auto" mt={{base:"85%",md:"105%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Northen Light
                     </Text>
@@ -373,11 +402,11 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"105%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Brander Gate
                     </Text>
-                    <Text color="white" fontWeight="bold" fontSize="xs">This is all good for beginners but grow, most bloggers forgot design<Text fontSize={{base:"xs",md:"xs"}} fontWeight="bold" color="#0C264C">Read More...</Text></Text>
+                    <Text color="white" fontWeight="bold" fontSize="xs">This is all good for beginners most bloggers forgot design<Text fontSize={{base:"xs",md:"xs"}} fontWeight="bold" color="#0C264C">Read More...</Text></Text>
                    
                     <Text fontSize="xs" color="white">Like❤            Comments💭</Text>
                         
@@ -395,7 +424,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"105%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Aus Beauty
                     </Text>
@@ -417,7 +446,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"105%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Surai Channel
                     </Text>
@@ -572,8 +601,9 @@ function HomePage() {
                
             </SimpleGrid>
             </Box>
-
-            <Text mt="8%" textAline="center" color="#fff" fontSize={{base:"3xl",md:"5xl"}} fontWeight={"bold"}>Subscribe To Our Newsletter</Text>
+            {/* <Box w="100%" m="auto"> */}
+                <Text mt="8%" textAlign="center" color="#fff" fontSize={{base:"3xl",md:"5xl"}} fontWeight={"bold"}>Subscribe To Our Newsletter</Text>
+            {/* </Box> */}
             <Box w="40%" borderRadius="12%" display="flex" m="auto" border="2px solid white">
                 <Box w="90%"></Box>
                 <Button borderRadius="20%" backgroundColor="white" textAline="right">
@@ -587,7 +617,7 @@ function HomePage() {
        </Box>
 
         </Box>
-     
+     <Footer/>
     </>
 
   )

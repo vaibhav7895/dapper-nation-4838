@@ -91,7 +91,7 @@ const Destination = () => {
             marginRight={"150px"}
             marginTop={"110px"}
           >
-            <Select placeholder='Select' fontSize={"xl"}  onChange={handleSort}>
+            <Select placeholder='Select' fontSize={"xl"}  onChange={handleSort} color={"#1071DB"} border={"3px solid #1071DB "}>
               <option value='asc'>Price:low to high</option>
               <option value='desc'>Price:High to low</option>
               
