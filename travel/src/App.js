@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import "./App.css";
 
 
+
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import MainRoutes from "./Pages/MainRoutes";
@@ -14,12 +15,14 @@ import { FlightBooking } from "./Pages/FlightBooking";
 import { FlightCompany } from "./Pages/FlightCompany";
 import { PassangerInfo } from "./Pages/PassangerInfo";
 
+
 function App() {
   const admin = useSelector((store) => {
     return store.AdminReducer.admin;
   });
   console.log(admin);
   return (
+
     <BrowserRouter>
       {!admin ? (
         <div className="App">
@@ -37,6 +40,7 @@ function App() {
         </div>
       )}
     </BrowserRouter>
+
 
   );
 }
