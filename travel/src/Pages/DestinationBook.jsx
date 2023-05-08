@@ -4,11 +4,14 @@ import flightimage from "../image/p1.jpg";
 import { MakeABooking } from "../Components/MakeABooking";
 import { Details } from "../Components/Details";
 import { Box, Button, Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 export const DestinationBook = () => {
-  
-  
-
+   
+  const navigate=useNavigate()
+  const handleClick=()=>{
+    navigate("/payments")
+  }
   return (
     <DIV>
       <h1 id="heading" style={{ paddingTop: "130px" }}>
@@ -133,7 +136,7 @@ export const DestinationBook = () => {
           <button style={{ color: "black" }} className="btn">
             Back
           </button>
-          <button style={{ backgroundColor: "#1071db" }} className="btn">
+          <button onClick={handleClick} style={{ backgroundColor: "#1071db" }} className="btn">
             Next
           </button>
         </div>

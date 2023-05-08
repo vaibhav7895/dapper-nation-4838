@@ -3,11 +3,15 @@ import styled from "styled-components";
 import flightimage from "../image/p1.jpg";
 import { MakeABooking } from "../Components/MakeABooking";
 import { Details } from "../Components/Details";
+import { useNavigate } from "react-router-dom";
 
 export const PassangerInfo = () => {
   const data = JSON.parse(localStorage.getItem("price")) || {};
   console.log(data);
-
+  const navigate=useNavigate()
+  const handleClick=()=>{
+    navigate("/payments")
+  }
   return (
     <DIV>
       <div style={{ marginLeft: "18vh", marginRight: "18vh" }}>
@@ -207,7 +211,7 @@ export const PassangerInfo = () => {
           <button style={{ color: "black" }} className="btn">
             Back
           </button>
-          <button style={{ backgroundColor: "#1071db" }} className="btn">
+          <button onClick={handleClick} style={{ backgroundColor: "#1071db" }} className="btn">
             Next
           </button>
         </div>

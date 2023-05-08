@@ -29,10 +29,10 @@ import {
     };
   });
   
-  export default function GridListWithHeading() {
+  export default function Contact() {
     return (
    <>
-   <Navbar/>
+   
     <Box w="95%" m="auto" bgColor="#1071DB"  p={4}>
       <Stack  spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading color="black" fontSize={'3xl'}>Support Mail Us</Heading><Box></Box>
@@ -142,7 +142,7 @@ import {
         </Box>
       </Center>
       </Box>
-    <Footer/>
+    
       </>
     );
   }

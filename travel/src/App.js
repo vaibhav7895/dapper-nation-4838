@@ -24,7 +24,9 @@ import Destination from "./Pages/Destination";
 
 
 function App() {
- 
+   const admin=useSelector((store)=>{
+    return store.AdminReducer.admin
+   })
 
   return (
 

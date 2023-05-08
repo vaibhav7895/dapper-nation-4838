@@ -5,8 +5,14 @@ import { FourList } from "../Components/FourList";
 import { ThreeSteps } from "../Components/ThreeSteps";
 import { Download } from "../Components/Download";
 import flightimage from "../image/p1.jpg";
+import { useNavigate } from "react-router-dom";
 
 export const FlightBooking = () => {
+  const navigate=useNavigate()
+
+  const handleClick=()=>{
+    navigate("/passengerinfo")
+  }
   // making a object for international flights data to pass it to FourList component
   const international = {
     h1: "Top",
@@ -93,13 +99,13 @@ export const FlightBooking = () => {
       <h1 id="heading" style={{ paddingTop: "130px" }}>
         Flight Booking
       </h1>
-      <div id="MainDiv" style={{ marginLeft: "18vh", marginRight: "18vh" }}>
+      <div  id="MainDiv" style={{ marginLeft: "18vh", marginRight: "18vh" }}>
         {/* heading */}
         {/* booking bar */}
         <BookingBar />
         {/* flight details */}
-        <FourList {...international} />
-        <FourList {...FightDeals} />
+        <FourList   {...international} />
+        <FourList onClick={handleClick}{...FightDeals} />
         <ThreeSteps {...threestepsdata} />
         <Download />
       </div>

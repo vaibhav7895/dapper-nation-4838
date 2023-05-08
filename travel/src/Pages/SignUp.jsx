@@ -119,8 +119,9 @@ import {
     return (
       <Box bg={useColorModeValue("gray.50", "gray.800")}
       backgroundImage={
-        "https://getwallpapers.com/wallpaper/full/a/5/b/50937.jpg"
-      }>
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+      }
+      backgroundSize={"cover"}>
         
         <Flex
           minH={"80vh"}
@@ -133,19 +134,19 @@ import {
               <Heading
                 fontSize={"4xl"}
                 textAlign={"center"}
-                color={"saddlebrown "}
+                color={"blue.500"}
               >
                 Sign up
               </Heading>
   
-              <Text fontSize={"lg"} color={"gray.600"}>
+              <Text fontSize={"lg"} color={"gray.600"} fontWeight={"bold"}>
                 Welcome to Travel ✌️
               </Text>
             </Stack>
   
             <Box
               rounded={"lg"}
-              bg={useColorModeValue("white", "gray.700")}
+              bgColor="rgba(255, 255, 255, 0.300)"
               boxShadow={"lg"}
               p={8}
             >
@@ -207,7 +208,7 @@ import {
                     onClick={SignupRequest}
                     loadingText="Submitting"
                     size="lg"
-                    bg={"#df9018"}
+                    bg={"blue.500"}
                     color={"white"}
                     _hover={{
                       bg: "pink.500",
@@ -219,7 +220,7 @@ import {
                 <Stack pt={6}>
                   <Text align={"center"}>
                     Already a user?{" "}
-                    <Link color={"blue.400"} href="/login">
+                    <Link color={"blue.500"} href="/login">
                       Login
                     </Link>
                   </Text>

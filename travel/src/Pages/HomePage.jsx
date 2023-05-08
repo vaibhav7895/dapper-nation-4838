@@ -5,15 +5,18 @@ import { Avatar,WrapItem,Wrap,Link } from '@chakra-ui/react'
 import phone from "../image/iphone.png"
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
+import { useNavigate } from 'react-router-dom';
 
 // https://images.unsplash.com/photo-1543746746-46047c4f4bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fFRyYXZlbGluZyUyMGJhbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60
 
 function HomePage() {
+
+    
    
   return (
     <>
 
-<Navbar/>
+
     
     <Box w="100%"  backgroundImage="https://images.unsplash.com/photo-1537387788952-cffe9f8d3090?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
         backgroundRepeat="no-repeat"
@@ -26,16 +29,16 @@ function HomePage() {
         <Text textAlign="center" color="#ffff" fontSize={{base:"md" ,md:"xl"}}>We have More Than 1 million Happy customer all around the world &</Text>
         <Text textAlign="center" color="#ffff" fontSize={{base:"md" ,md:"xl"}}>More Than 70+ destination around the globe.</Text>
 
-        <Box m="auto" w="80%" height={{base:"10vh",md:"20vh" }}  borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)">
+        <Box m="auto" w="80%" height={{base:"10vh",md:"20vh" }}  borderRadius="5%" >bgColor="rgba(255, 255, 255, 0.300)"
             <Box display="flex" pt="2%" >
             
-                <Link to="/destinations"><Button m="auto" fontWeight="bold"  w="20%" _hover={{ bg: "#1071DB" }}>
+                <Button  m="auto" fontWeight="bold"  w="20%" _hover={{ bg: "#1071DB" }}>
                     
                     ✈Flights
                    
-                    </Button></Link>
+                    </Button>
                     
-                <Button m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🏚Hotels</Button>
+                <Button  m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🏚Hotels</Button>
                 <Button m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🚗Transports</Button>
             </Box>
             
@@ -121,7 +124,7 @@ function HomePage() {
                     alignItems="center"
                     
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"118%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Light you Journey
                     </Text>
@@ -146,7 +149,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"118%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Try Tredetional
                     </Text>
@@ -168,7 +171,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"118%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Travels Special
                     </Text>
@@ -190,7 +193,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"118%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"98%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     City of peace
                     </Text>
@@ -321,7 +324,7 @@ function HomePage() {
                 
                     <Box  w="35%"  m={{base:"auto",md:"auto"}}  >
 
-                        <Image m="auto" borderRadius={"2%"} height={{base:"200px",md:"80vh"}} float="right" src={phone}/>
+                        <Image m="auto" borderRadius={"2%"} height={{base:"200px",md:"60vh"}} float="right" src={phone}/>
                     </Box>
                 
                    
@@ -380,7 +383,7 @@ function HomePage() {
                     alignItems="center"
                 >
 
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"102%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Northen Light
                     </Text>
@@ -402,7 +405,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"102%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Brander Gate
                     </Text>
@@ -424,7 +427,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"102%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Aus Beauty
                     </Text>
@@ -446,7 +449,7 @@ function HomePage() {
                      justifyContent="center"
                      alignItems="center"
                 >
-                <Box w="96%" m="auto" mt={{base:"85%",md:"120%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
+                <Box w="96%" m="auto" mt={{base:"85%",md:"102%"}} borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" textAlign="left" >
                     <Text color="white" fontWeight="bold" fontSize={{base:"md",md:"xl"}}>
                     Surai Channel
                     </Text>
@@ -617,7 +620,7 @@ function HomePage() {
        </Box>
 
         </Box>
-     <Footer/>
+    
     </>
 
   )

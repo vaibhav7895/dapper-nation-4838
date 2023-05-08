@@ -76,8 +76,9 @@ import {
         justify={"center"}
         backgroundImage={
             
-          "https://wallpaperaccess.com/full/865178.jpg"
+          "https://images.unsplash.com/photo-1638262052640-82e94d64664a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         }
+        backgroundSize={"cover"}
         
       >
         <Stack
@@ -89,10 +90,10 @@ import {
           backgroundColor={"transparent"}
         >
           <Stack align={"center"}>
-            <Heading fontSize={"4xl"} color={"red.400"}>
+            <Heading fontSize={"4xl"} color={"blue.500"}>
               Sign in to your account
             </Heading>
-            <Text fontSize={"lg"} color={"gray.600"}>
+            <Text fontSize={"lg"} color={"white"}>
               to enjoy all of our cool{" "}
               <Link color={"brown.400"} href="/">
                 features
@@ -102,7 +103,7 @@ import {
           </Stack>
           <Box
             rounded={"lg"}
-            bg={useColorModeValue("white", "gray.700")}
+            bgColor="rgba(255, 255, 255, 0.300)"
             boxShadow={"lg"}
             p={8}
           >
