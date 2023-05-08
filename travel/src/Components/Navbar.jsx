@@ -21,7 +21,7 @@ const Navbar = () => {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const dispatch=useDispatch()
-  const navigate=useNavigate()
+  // const navigate=useNavigate()
   const handleemail=(e)=>{
     setEmail(e.target.value)
      
@@ -67,7 +67,6 @@ const Navbar = () => {
             <li className='contact'>Flights</li>
 
           <Link>
-            <li className='contact'>Booking<FontAwesomeIcon onClick={handledropdown} icon={faCircleChevronDown} /></li>
 
           </Link>
 
@@ -127,7 +126,7 @@ const Navbar = () => {
           }
         </button>
       </DIV>
-     
+
     </>
   )
 }

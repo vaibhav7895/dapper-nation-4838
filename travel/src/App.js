@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import "./App.css";
-
+import HomePage from "./Pages/HomePage"
 
 
 import Footer from "./Components/Footer";
@@ -18,11 +18,10 @@ import { PassangerInfo } from "./Pages/PassangerInfo";
 
 
 function App() {
-  const admin = useSelector((store) => {
-    return store.AdminReducer.admin;
-  });
-  console.log(admin);
+ 
   return (
+
+
 
 
     <BrowserRouter>
@@ -44,6 +43,7 @@ function App() {
       )}
 
     </BrowserRouter>
+
 
 
   );
