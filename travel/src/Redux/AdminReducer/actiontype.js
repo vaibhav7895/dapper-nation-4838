@@ -5,3 +5,4 @@ export const SIGNIN_FAILURE_ADMIN = "SIGNIN_FAILURE_ADMIN";
 
 export const GOTOHOME = "GOTOHOME";
 export const LOGOUT = "LOGOUT";
+export const SETID = "SETID";

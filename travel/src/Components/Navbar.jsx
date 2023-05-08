@@ -63,7 +63,11 @@ const Navbar = () => {
             <li className='about'>Destinations</li>
           </Link>
 
+          <Link to={"/booking"} >
+
+
           <Link >
+
             <li className='contact'>Flights</li>
 
           <Link>
@@ -72,7 +76,9 @@ const Navbar = () => {
 
 
           <Link to={"/reviews"}>
-            <li className='review'>Reviews</li>
+
+            <li className='login'>Reviews</li>
+
           </Link>
           <Link>
             <li className='contact1'>Contact</li>
@@ -112,7 +118,9 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faHeart} />
             </li>
           </Link>
-          <Link to="/signup">
+
+          <Link to={"/signup"}>
+
             <li className='user'>
               <FontAwesomeIcon icon={faUser} />
             </li>
