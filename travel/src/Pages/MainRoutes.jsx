@@ -1,10 +1,5 @@
 
-import React from "react";
-import { Routes, Route } from "react-router-dom";
 import FlightBooking from "./FlightBooking";
-const MainRoutes = () => {
-  return <div></div>;
-
 import React from 'react'
 
 import { Route, Routes } from 'react-router-dom'
@@ -15,6 +10,9 @@ import Destination from './Destination'
 import Reviews from './Reviews'
 import Login from './Login'
 import Signup from './SignUp'
+
+
+
 
 
 const MainRoutes = () => {

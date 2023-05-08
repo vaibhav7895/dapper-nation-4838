@@ -21,7 +21,7 @@ const Navbar = () => {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const dispatch=useDispatch()
-  const navigate=useNavigate()
+  // const navigate=useNavigate()
   const handleemail=(e)=>{
     setEmail(e.target.value)
      
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li className='about'>Destinations</li>
           </Link>
           <Link>
-            <li className='contact'>Booking<FontAwesomeIcon onClick={handledropdown} icon={faCircleChevronDown} /></li>
+            <li className='contact'>Booking </li>
             
           </Link>
 
@@ -121,14 +121,7 @@ const Navbar = () => {
           }
         </button>
       </DIV>
-      {
-        show && <select className='select' name="" id="" style={{ color: "white", position: "relative", backgroundColor: "teal", height: "auto", width: "100px", marginLeft: "60px" }}>
-          <option value="">Select</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-        </select>
-      }
+    
 
     </>
   )
