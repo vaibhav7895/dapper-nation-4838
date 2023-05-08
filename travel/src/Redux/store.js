@@ -5,10 +5,12 @@ import thunk from "redux-thunk";
 import {reducer as AuthReducer} from "../Redux/AuthReducer/reducer"
 import {reducer as ProductReducer} from "../Redux/ProductReducer/reducer"
 import { reducer as AdminReducer } from "./AdminReducer/reducer";
+import {reducer as CardReducer} from "./CardReducer/reducer"
 const rootReducer = combineReducers({
    AuthReducer,
    ProductReducer,
-   AdminReducer 
+   AdminReducer,
+   CardReducer
   });
   
 const composeEnhancers =

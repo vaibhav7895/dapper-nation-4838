@@ -116,8 +116,6 @@
       "Price": "2100053",
       "Ratings": "⭐⭐⭐⭐⭐",
       "images": "https://cdn.pixabay.com/photo/2019/07/08/18/14/background-4325274_960_720.jpg"
-
-
     },
     {
       "id": 18,
@@ -154,7 +152,6 @@
       "Ratings": "⭐⭐⭐⭐⭐",
       "images": "https://cdn.pixabay.com/photo/2019/12/13/07/45/landscape-4692446_960_720.jpg",
       "id": 21
-
     }
   ],
   "registeredUser": [
@@ -173,7 +170,6 @@
       "last_name": "Decreuze",
       "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat.  "
-      
     },
     {
       "id": 2,
@@ -181,7 +177,6 @@
       "last_name": "Michal",
       "Ratings": "⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat.  "
-
     },
     {
       "id": 3,
@@ -189,7 +184,6 @@
       "last_name": "Fassmann",
       "Ratings": "⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 4,
@@ -197,7 +191,6 @@
       "last_name": "Scatcher",
       "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 5,
@@ -205,7 +198,6 @@
       "last_name": "Hallums",
       "Ratings": "⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 6,
@@ -213,7 +205,6 @@
       "last_name": "Samson",
       "Ratings": "⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 7,
@@ -221,7 +212,6 @@
       "last_name": "Kordovani",
       "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 8,
@@ -229,7 +219,6 @@
       "last_name": "McAviy",
       "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 9,
@@ -237,7 +226,6 @@
       "last_name": "Pepi",
       "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 10,
@@ -245,7 +233,6 @@
       "last_name": "Latey",
       "Ratings": "⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 11,
@@ -253,7 +240,6 @@
       "last_name": "Linklet",
       "Ratings": "⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-      
     },
     {
       "id": 12,
@@ -261,13 +247,11 @@
       "last_name": "Swaile",
       "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
-
     },
     {
       "id": 13,
       "first_name": "Beatriz",
       "last_name": "Rossander",
-
       "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
     },
@@ -381,7 +365,6 @@
       "first_name": "Giorgio",
       "last_name": "Paradyce",
       "Ratings": "⭐⭐⭐",
-
       "Description": "Toxic effect of thallium, assault, sequela"
     },
     {
@@ -389,8 +372,90 @@
       "first_name": "Ozzy",
       "last_name": "Roz",
       "Ratings": "⭐⭐⭐⭐⭐",
-
       "Description": "Fibrous dysplasia (monostotic), unspecified lower leg"
+    }
+  ],
+  "Cart": [
+    {
+      "id": 9,
+      "City": "Maldives",
+      "Country": "Maldives",
+      "Duration": "4 Nights 3 Days",
+      "Price": 6000,
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_960_720.jpg"
+    },
+    {
+      "id": 6,
+      "City": "Bangkok",
+      "Country": "Thailand",
+      "Duration": "4 Nights 3 Days",
+      "Price": 7000,
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2016/02/04/20/36/bangkok-1179807_960_720.jpg"
+    },
+    {
+      "id": 4,
+      "City": "Kerala",
+      "Country": "India",
+      "Duration": "5 Nights 4 Days",
+      "Price": 12000,
+      "Ratings": "⭐⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2016/01/14/03/26/sunset-1139296__340.jpg"
+    },
+    {
+      "id": 7,
+      "City": "Goa",
+      "Country": "India",
+      "Duration": "5 Nights 4 Days",
+      "Price": 10000,
+      "Ratings": "⭐⭐⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2018/12/18/10/41/india-3882103_960_720.jpg"
+    },
+    {
+      "id": 11,
+      "City": "Rajasthan",
+      "Country": "India",
+      "Duration": "3 Nights 2 Days",
+      "Price": "80003",
+      "Ratings": "⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2021/04/06/11/22/hawa-mahal-6156123_960_720.jpg"
+    },
+    {
+      "id": 10,
+      "City": "Andaman",
+      "Country": "India",
+      "Duration": "5 Nights 4 Days",
+      "Price": 30000,
+      "Ratings": "⭐⭐⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2016/02/12/12/27/thailand-1195997_960_720.jpg"
+    },
+    {
+      "id": 8,
+      "City": "Assam",
+      "Country": "India",
+      "Duration": "3 Nights 2 Days",
+      "Price": 24000,
+      "Ratings": "⭐⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2022/01/03/08/42/tea-garden-6912013_960_720.jpg"
+    },
+    {
+      "id": 16,
+      "City": "Uttrakhand",
+      "Country": "India",
+      "Duration": "6 Nights 5 Days",
+      "Price": "2100053",
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2019/07/08/18/14/background-4325274_960_720.jpg"
+    },
+    {
+      "id": 5,
+      "City": "Ooty",
+      "Country": "India",
+      "Duration": "3 Nights 2 Days",
+      "Price": 4000,
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "images": "https://cdn.pixabay.com/photo/2019/12/13/07/45/landscape-4692446_960_720.jpg"
     }
   ]
 }

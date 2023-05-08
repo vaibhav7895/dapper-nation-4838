@@ -108,7 +108,7 @@ import {
           >
             <Stack spacing={4}>
               <FormControl id="email">
-                <FormLabel fontWeight={"bold"}>Email address</FormLabel>
+                <FormLabel >Email address</FormLabel>
                 <Input
                   type="email"
                   value={email}

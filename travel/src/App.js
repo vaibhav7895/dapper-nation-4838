@@ -14,14 +14,15 @@ import { Box } from "@chakra-ui/react";
 import { FlightBooking } from "./Pages/FlightBooking";
 import { FlightCompany } from "./Pages/FlightCompany";
 import { PassangerInfo } from "./Pages/PassangerInfo";
-
+import { DestinationBook } from "./Pages/DestinationBook";
+import Destination from "./Pages/Destination";
 
 
 function App() {
   const admin = useSelector((store) => {
     return store.AdminReducer.admin;
   });
-  console.log(admin);
+  
   return (
 
 
@@ -29,7 +30,7 @@ function App() {
       {!admin ? (
         <div className="App">
           <Navbar />
-          <MainRoutes />
+          <MainRoutes/>
           <Footer />
         </div>
       ) : (
