@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export const FourList = ({ h1, heading, allDivsArr }) => {
+  const navigate=useNavigate()
+
+  const handleClick=()=>{
+    navigate("/flightBooking")
+  }
   return (
     <DIV style={{ marginBottom: "30px" }}>
       <h1>
@@ -75,8 +81,9 @@ export const FourList = ({ h1, heading, allDivsArr }) => {
                       paddingRight: "10px",
                       paddingLeft: "10px",
                     }}
+                    onClick={handleClick}
                   >
-                    Find Details
+                    Book Now
                   </button>
                 </div>
               </div>

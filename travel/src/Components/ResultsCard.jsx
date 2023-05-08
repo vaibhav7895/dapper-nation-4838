@@ -1,9 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import planeicon from "../image/duration.jpg";
-import { json } from "react-router-dom";
+import { json, useNavigate } from "react-router-dom";
 
 export const ResultsCard = ({ data }) => {
+  const navigate=useNavigate()
+  const handleClick=()=>{
+    navigate("/passengerInfo")
+    
+  }
+
   return (
     <DIV
       style={{
@@ -89,10 +95,8 @@ export const ResultsCard = ({ data }) => {
                   fontWeight: "600",
                   width: "120px",
                 }}
-                onClick={() => {
-                  let info = JSON.stringify(item);
-                  localStorage.setItem("price", info);
-                }}
+                onClick={handleClick()}
+                
               >
                 Book Now
               </button>

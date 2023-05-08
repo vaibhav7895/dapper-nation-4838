@@ -3,8 +3,13 @@ import styled from "styled-components";
 import { MakeABooking } from "../Components/MakeABooking";
 import { ResultsCard } from "../Components/ResultsCard";
 import flightimage from "../image/p1.jpg";
+import { useNavigate } from "react-router-dom";
 
 export const FlightCompany = () => {
+  const navigate=useNavigate()
+  const handleClick=()=>{
+    navigate("/flightBooking")
+  }
   const arr = [
     {
       image:
@@ -48,7 +53,7 @@ export const FlightCompany = () => {
       <h1 id="heading" style={{ paddingTop: "130px" }}>
         Flight Booking
       </h1>
-      <div style={{ marginLeft: "18vh", marginRight: "18vh" }}>
+      <div onClick={handleClick}style={{ marginLeft: "18vh", marginRight: "18vh" }}>
         <MakeABooking />
         <ResultsCard data={arr} />
       </div>

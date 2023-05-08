@@ -6,8 +6,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import debitcard from "../image/debitcard.png";
 import Blueplane from "../image/blueplane.png";
+import { useNavigate } from "react-router-dom";
+import { useControllableState, useToast } from "@chakra-ui/react";
 
 export const Payments = () => {
+  const navigate=useNavigate()
+  const toast=useToast()
+  const handleClick=()=>{
+    navigate("/booking")
+  }
+  const handlebutton=()=>{
+    setTimeout(()=>{
+      navigate("/")
+    },1000)
+    
+    toast({
+      title: `Payment Successful`,
+      status: "success",
+      duration: 1500,
+      position: "top",
+      isClosable: true,
+    });;
+  }
   return (
     <DIV>
       <h1 id="heading" style={{ paddingTop: "130px" }}>
@@ -99,7 +119,7 @@ export const Payments = () => {
               <span style={{ color: "#3f8de3" }}>privacy policy </span>your
               payment information and test information will remain confidential
             </h2>
-            <button style={{ color: "black" }} className="btn">
+            <button style={{ color: "black" }} onClick={handleClick} className="btn">
               Back
             </button>
           </div>
@@ -180,6 +200,7 @@ export const Payments = () => {
                 borderRadius: "30px",
                 marginBottom: "20px",
               }}
+              onClick={handlebutton}
             >
               Confirm Payment
             </button>
