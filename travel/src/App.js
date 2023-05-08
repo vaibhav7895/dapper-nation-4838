@@ -1,6 +1,10 @@
 import { useSelector } from "react-redux";
 import "./App.css";
 
+import HomePage from "./Pages/HomePage"
+
+
+
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import MainRoutes from "./Pages/MainRoutes";
@@ -12,16 +16,15 @@ import { Box } from "@chakra-ui/react";
 import { FlightBooking } from "./Pages/FlightBooking";
 
 function App() {
-  const admin = useSelector((store) => {
-    return store.AdminReducer.admin;
-  });
-  console.log(admin);
+ 
   return (
+
     <BrowserRouter>
       {!admin ? (
         <div className="App">
           <Navbar />
           <MainRoutes />
+
           <Footer />
         </div>
       ) : (
@@ -34,6 +37,7 @@ function App() {
         </div>
       )}
     </BrowserRouter>
+
   );
 }
 
