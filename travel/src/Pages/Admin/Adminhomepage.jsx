@@ -1,10 +1,13 @@
 import { Button, Table, TableCaption, TableContainer, Tbody, Td, Tfoot, Th, Thead, Tr,Link } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
+import { SETID } from '../../Redux/AdminReducer/actiontype'
+import { useDispatch } from 'react-redux'
 
 const Dashboard = () => {
   const [fulldata,setfulldata]=useState([])
    const [edit,setedit]=useState("")
+   const dispatch=useDispatch()
   const getdata=()=>{
   axios.get(`http://localhost:8080/Destinations`).then((res)=>{
       setfulldata(res.data)
@@ -33,9 +36,13 @@ const Dashboard = () => {
   //     }
   //  })
   // }
+  const handleedit=(id)=>{
+   dispatch({type:SETID,payload:id})
+  }
+  //console.log(edit)
  
  
-  // localStorage.setItem("edit",JSON.stringify(edit)) 
+   //localStorage.setItem("edit",JSON.stringify(edit)) 
   return (
     <TableContainer>
             <Table variant='striped' colorScheme='teal'>
@@ -50,7 +57,7 @@ const Dashboard = () => {
                   <Th isNumeric>Price</Th>
                   <Th>Ratings</Th>
                   <Th>Delete</Th>
-                 
+                 <Th>Edit</Th>
                 </Tr>
               </Thead>
               <Tbody>
@@ -71,7 +78,7 @@ const Dashboard = () => {
                   <Td isNumeric>{item.Price}</Td>
                   <Td>{item.Ratings}</Td>
                   <Td><Button onClick={()=>handledelete(item.id)}>Delete</Button></Td>
-                  
+                  <Td><Button onClick={()=>handleedit(item.id)}>Edit</Button></Td>
                 </Tr>
                 })
                }

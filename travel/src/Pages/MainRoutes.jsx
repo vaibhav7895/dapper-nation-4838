@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import FlightBooking from "./FlightBooking";
@@ -14,22 +15,34 @@ import { DestinationBook } from "./DestinationBook";
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 const MainRoutes = () => {
   return (
     <Routes>
+
       <Route path='/' element={<HomePage/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/destinations' element={<Destination/>} />
       <Route path='/reviews' element={<Reviews/>}/>
       <Route path='/booking' element={<DestinationBook/>}/>
+
       {/* <Route path='/contact' element={<Contact/>}/> */}
-     <Route path="*" element={<Text>404 Page Not Found</Text>}/>
+      <Route path="*" element={<Text>404 Page Not Found</Text>} />
+
      
     </Routes>
-
-  )
-}
-
+  );
+};
 
 export default MainRoutes;

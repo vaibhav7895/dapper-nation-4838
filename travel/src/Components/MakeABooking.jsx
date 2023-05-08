@@ -14,7 +14,7 @@ export const MakeABooking = () => {
 const DIV = styled.div`
   #head {
     text-align: left;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 700;
     margin-top: 50px;
   }

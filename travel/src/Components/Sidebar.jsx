@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import {
   IconButton,
   Box,
@@ -6,7 +6,7 @@ import {
   Flex,
   Icon,
   useColorModeValue,
-  Link,
+ 
   Drawer,
   DrawerContent,
   Text,
@@ -14,6 +14,7 @@ import {
   BoxProps,
   FlexProps,
   Image,
+ 
 } from '@chakra-ui/react';
 import {
   FiHome,
@@ -29,22 +30,31 @@ import { IconType } from 'react-icons';
 import { ReactText } from 'react';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NavLink, useSearchParams } from 'react-router-dom';
+import { NavLink, useSearchParams, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { GOTOHOME } from '../Redux/AdminReducer/actiontype';
 
 // interface LinkItemProps {
 //   name: string;
 //   icon: IconType;
 // }
-const LinkItems = [
-  { name: 'Dashboard', icon:FiGrid },
-  { name: "Add", icon: FiArrowRightCircle },
-  { name: 'Explore', icon: FiCompass },
-  { name: 'Favourites', icon: FiStar },
-  { name: 'Settings', icon: FiSettings },
-];
+
+// const getid=()=>{
+//   const id=useSelector((store)=>{
+//     return store.AdminReducer.id
+//   })
+//   return +id
+// }
+
+
+
+
+
 
 export default function SimpleSidebar({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+
   return (
     <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
       <SidebarContent
@@ -77,6 +87,20 @@ export default function SimpleSidebar({ children }) {
 // }
 
 const SidebarContent = ({ onClose, ...rest }) => {
+  const id=useSelector((store)=>{
+        return store.AdminReducer.id
+      })
+  const LinkItems = [
+    { name: 'Dashboard', icon:FiGrid,path:"/Dashboard" },
+    { name: "Add", icon: FiArrowRightCircle,path:"/Add" },
+    { name: 'About', icon: FiCompass,path:"/About" },
+    { name: `Edit`, icon: FiCompass,path: `Edit/:${+id}`},
+    { name: 'Favourites', icon: FiStar,path:"/Favourites" },
+    { name: 'Settings', icon: FiSettings,path:"/Settings" },
+    
+   
+  ];
+  
   return (
     <Box
       bg={useColorModeValue('white', 'gray.900')}
@@ -90,11 +114,14 @@ const SidebarContent = ({ onClose, ...rest }) => {
         {/* <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
           Logo
         </Text> */}
-       <Image width={"50%"} height={"95%"} style={{borderRadius:"50%"}} src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000"/>
+       
+        <Image width={"50%"} height={"95%"} style={{borderRadius:"50%"}} src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000"/> 
+       
+      
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
-        <NavItem key={link.name} icon={link.icon} name={link.name}>
+        <NavItem key={link.name} path={link.path} icon={link.icon} name={link.name}>
           {link.name}
         </NavItem>
       ))}
@@ -106,11 +133,11 @@ const SidebarContent = ({ onClose, ...rest }) => {
 //   icon: IconType;
 //   children: ReactText;
 // }
-const NavItem = ({ icon,name, children, ...rest }) => {
+const NavItem = ({ icon,name,path, children, ...rest }) => {
   
   
   return (
-    <NavLink to={`${name}`}   style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
+    <NavLink to={`${path}`}   style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
       <Flex
         align="center"
         p="4"
