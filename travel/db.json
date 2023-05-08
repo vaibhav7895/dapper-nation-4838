@@ -50,8 +50,8 @@
       "City": "Rajasthan",
       "Country": "India",
       "Duration": "3 Nights 2 Days",
-      "Price": 8000,
-      "Ratings": "⭐⭐⭐",
+      "Price": "80003",
+      "Ratings": "⭐⭐",
       "images": "https://cdn.pixabay.com/photo/2021/04/06/11/22/hawa-mahal-6156123_960_720.jpg"
     },
     {
@@ -95,9 +95,11 @@
       "City": "Uttrakhand",
       "Country": "India",
       "Duration": "6 Nights 5 Days",
-      "Price": 21000,
+      "Price": "2100053",
       "Ratings": "⭐⭐⭐⭐⭐",
       "images": "https://cdn.pixabay.com/photo/2019/07/08/18/14/background-4325274_960_720.jpg"
+
+
     },
     {
       "id": 18,
@@ -134,6 +136,7 @@
       "Ratings": "⭐⭐⭐⭐⭐",
       "images": "https://cdn.pixabay.com/photo/2019/12/13/07/45/landscape-4692446_960_720.jpg",
       "id": 21
+
     }
   ],
   "registeredUser": [
@@ -150,210 +153,225 @@
       "id": 1,
       "first_name": "Daron",
       "last_name": "Decreuze",
-      "Ratings": 33,
-      "Description": "Malignant neoplasm of lower-outer quadrant of left female breast"
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat.  "
+      
     },
     {
       "id": 2,
       "first_name": "Adey",
       "last_name": "Michal",
-      "Ratings": 45,
-      "Description": "Diabetes mellitus due to underlying condition with oral complications"
+      "Ratings": "⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat.  "
+
     },
     {
       "id": 3,
       "first_name": "Juliann",
       "last_name": "Fassmann",
-      "Ratings": 18,
-      "Description": "Encounter for hearing examination following failed hearing screening"
+      "Ratings": "⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 4,
       "first_name": "Theadora",
       "last_name": "Scatcher",
-      "Ratings": 48,
-      "Description": "Displaced fracture of neck of other metacarpal bone, subsequent encounter for fracture with delayed healing"
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 5,
       "first_name": "Emili",
       "last_name": "Hallums",
-      "Ratings": 56,
-      "Description": "Angular blepharoconjunctivitis, left eye"
+      "Ratings": "⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 6,
       "first_name": "Calhoun",
       "last_name": "Samson",
-      "Ratings": 19,
-      "Description": "Minor laceration of branches of celiac and mesenteric artery"
+      "Ratings": "⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 7,
       "first_name": "Dannel",
       "last_name": "Kordovani",
-      "Ratings": 52,
-      "Description": "Poisoning by analeptics and opioid receptor antagonists, intentional self-harm, initial encounter"
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 8,
       "first_name": "Prentice",
       "last_name": "McAviy",
-      "Ratings": 68,
-      "Description": "Toxic effect of venom of other arthropod, accidental (unintentional), sequela"
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 9,
       "first_name": "Flossi",
       "last_name": "Pepi",
-      "Ratings": 53,
-      "Description": "Arthropathy following intestinal bypass, right hand"
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 10,
       "first_name": "Marlene",
       "last_name": "Latey",
-      "Ratings": 61,
-      "Description": "Unspecified injury of flexor muscle, fascia and tendon of other and unspecified finger at wrist and hand level"
+      "Ratings": "⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 11,
       "first_name": "Angie",
       "last_name": "Linklet",
-      "Ratings": 2,
-      "Description": "Degenerative myopia, bilateral"
+      "Ratings": "⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+      
     },
     {
       "id": 12,
       "first_name": "Star",
       "last_name": "Swaile",
-      "Ratings": 34,
-      "Description": "Other specified injury of unspecified tibial artery, left leg, sequela"
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
+
     },
     {
       "id": 13,
       "first_name": "Beatriz",
       "last_name": "Rossander",
-      "Ratings": 18,
-      "Description": "Other diseases caused by chlamydiae"
+
+      "Ratings": "⭐⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
     },
     {
       "id": 14,
       "first_name": "Porty",
       "last_name": "Capitano",
-      "Ratings": 95,
-      "Description": "Malignant neoplasm of extrahepatic bile duct"
+      "Ratings": "⭐⭐⭐⭐",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu finibus lectus, quis viverra arcu. Nunc a felis eget arcu pharetra vehicula. Aenean pretium nibh vitae neque faucibus consequat. "
     },
     {
       "id": 15,
       "first_name": "Sergent",
       "last_name": "Bikker",
-      "Ratings": 52,
+      "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Infantile idiopathic scoliosis, site unspecified"
     },
     {
       "id": 16,
       "first_name": "Prinz",
       "last_name": "Munden",
-      "Ratings": 80,
+      "Ratings": "⭐⭐⭐⭐",
       "Description": "Nondisplaced fracture of shaft of third metacarpal bone, right hand, initial encounter for closed fracture"
     },
     {
       "id": 17,
       "first_name": "Waldon",
       "last_name": "Raitt",
-      "Ratings": 25,
+      "Ratings": "⭐⭐⭐",
       "Description": "Displaced fracture of olecranon process with intraarticular extension of left ulna, subsequent encounter for open fracture type I or II with nonunion"
     },
     {
       "id": 18,
       "first_name": "Osbourne",
       "last_name": "Quoit",
-      "Ratings": 71,
+      "Ratings": "⭐⭐",
       "Description": "Heatstroke and sunstroke, initial encounter"
     },
     {
       "id": 19,
       "first_name": "Herta",
       "last_name": "Cominello",
-      "Ratings": 10,
+      "Ratings": "⭐",
       "Description": "Displaced fracture of body of hamate [unciform] bone, right wrist"
     },
     {
       "id": 20,
       "first_name": "Odie",
       "last_name": "Carnegie",
-      "Ratings": 8,
+      "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Salmonella sepsis"
     },
     {
       "id": 21,
       "first_name": "Staffard",
       "last_name": "Kohnen",
-      "Ratings": 55,
+      "Ratings": "⭐⭐",
       "Description": "Explosion and rupture of other pressurized tire, pipe or hose, subsequent encounter"
     },
     {
       "id": 22,
       "first_name": "Dorice",
       "last_name": "Duiguid",
-      "Ratings": 41,
+      "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Other injury of extensor muscle, fascia and tendon of right ring finger at wrist and hand level"
     },
     {
       "id": 23,
       "first_name": "Temp",
       "last_name": "Boddy",
-      "Ratings": 79,
+      "Ratings": "⭐⭐⭐⭐",
       "Description": "Toxic effect of dichloromethane, assault, initial encounter"
     },
     {
       "id": 24,
       "first_name": "Ferne",
       "last_name": "Haggath",
-      "Ratings": 65,
+      "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Laceration with foreign body of left front wall of thorax without penetration into thoracic cavity, subsequent encounter"
     },
     {
       "id": 25,
       "first_name": "Cyndia",
       "last_name": "Lavalde",
-      "Ratings": 14,
+      "Ratings": "⭐⭐⭐⭐",
       "Description": "Personal history of malignant neoplasm of thymus"
     },
     {
       "id": 26,
       "first_name": "Louella",
       "last_name": "Gulberg",
-      "Ratings": 68,
+      "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Partial traumatic amputation of midfoot"
     },
     {
       "id": 27,
       "first_name": "Trumaine",
       "last_name": "Dace",
-      "Ratings": 97,
+      "Ratings": "⭐⭐⭐",
       "Description": "Type 2 diabetes mellitus with diabetic arthropathy"
     },
     {
       "id": 28,
       "first_name": "Eugene",
       "last_name": "Nathon",
-      "Ratings": 48,
+      "Ratings": "⭐⭐⭐⭐⭐",
       "Description": "Osteitis condensans, multiple sites"
     },
     {
       "id": 29,
       "first_name": "Giorgio",
       "last_name": "Paradyce",
-      "Ratings": 75,
+      "Ratings": "⭐⭐⭐",
+
       "Description": "Toxic effect of thallium, assault, sequela"
     },
     {
       "id": 30,
       "first_name": "Ozzy",
       "last_name": "Roz",
-      "Ratings": 48,
+      "Ratings": "⭐⭐⭐⭐⭐",
+
       "Description": "Fibrous dysplasia (monostotic), unspecified lower leg"
     }
   ]

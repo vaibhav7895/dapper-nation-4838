@@ -16,5 +16,6 @@ const DIV = styled.div`
     text-align: left;
     font-size: 40px;
     font-weight: 700;
+    margin-top: 50px;
   }
 `;

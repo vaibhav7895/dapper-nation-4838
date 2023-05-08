@@ -14,6 +14,7 @@ import Reviews from './Reviews'
 import Login from './Login'
 import Signup from './SignUp'
 
+
 const MainRoutes = () => {
   return (
     <Routes>
@@ -22,8 +23,9 @@ const MainRoutes = () => {
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/destinations' element={<Destination/>} />
       <Route path='/reviews' element={<Reviews/>}/>
-    {/* <Route path='/booking' element={<FlightBooking/>}/>  */}
+
      <Route path="*" element={<Text>404 Page Not Found</Text>}/>
+     
     </Routes>
 
   )

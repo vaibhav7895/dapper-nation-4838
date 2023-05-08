@@ -23,6 +23,7 @@ export const FourList = ({ h1, heading, allDivsArr }) => {
         {allDivsArr.map((item, i) => {
           return (
             <div
+              key={i}
               style={{
                 backgroundImage: `url(${item.image})`,
                 display: "flex",

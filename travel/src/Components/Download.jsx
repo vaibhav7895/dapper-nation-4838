@@ -4,11 +4,11 @@ import phone from "../image/iphone.png";
 
 export const Download = () => {
   return (
-    <DIV style={{ marginBottom: "50px" }}>
-      <div id="main">
+    <DIV style={{ marginBottom: "50px" }} >
+      <div id="main" >
         <img id="phone" src={phone} alt="" />
         <div id="info">
-          <h1 style={{ fontSize: "70px" }}>DOWNLOAD</h1>
+          <h1 style={{ fontSize: "70px",paddingTop:"20px" }}>DOWNLOAD</h1>
           <h1 style={{ fontSize: "25px" }}>Our Mobile App</h1>
           <h3 style={{ fontSize: "15px" }}>
             this app allows travellers to find adventure & book interesting &
@@ -69,6 +69,8 @@ const DIV = styled.div`
     border-radius: 35px;
     display: flex;
     gap: 30px;
+    width:80%;
+    margin:auto
   }
   #info {
     color: white;
@@ -82,4 +84,16 @@ const DIV = styled.div`
     flex-direction: column;
     gap: 30px;
   }
+
+
+  
+
+  @media screen and (max-width: 480px) {
+    #main {
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid white;
+    }
+  }
+
 `;
