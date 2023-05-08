@@ -59,15 +59,15 @@ const Navbar = () => {
           <Link to={"/"}>
             <li className='home'>Home</li>
           </Link>
-          <Link>
+          <Link to={"/destinations"}>
             <li className='about'>Destinations</li>
           </Link>
-          <Link >
+          <Link to={"/booking"} >
             <li className='contact'>Flights</li>
           </Link>
 
 
-          <Link>
+          <Link to={"/reviews"}>
             <li className='login'>Reviews</li>
           </Link>
           <Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faHeart} />
             </li>
           </Link>
-          <Link>
+          <Link to={"/signup"}>
             <li className='user'>
               <FontAwesomeIcon icon={faUser} />
             </li>
