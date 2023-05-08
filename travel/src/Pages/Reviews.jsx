@@ -20,7 +20,7 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from '../Redux/ProductReducer/action';
+import { getProducts, getReviews } from '../Redux/ProductReducer/action';
 import Destinationcard from '../Components/Destinationcard';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import Pagination from '../Filter/Pagination';
@@ -28,14 +28,15 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
 import { useRef } from 'react';
 import { Download } from '../Components/Download';
-const Destination = () => {
+import ReviewCard from '../Components/ReviewCard';
+const Reviews = () => {
   const [searchParams,setSearchParams] = useSearchParams();
   const location = useLocation();
   const dispatch = useDispatch();
   const [order,setOrder]=useState("")
   
 
-  const { destinations, isLoading, isError, total } = useSelector((store) => {
+  const { reviews, isLoading, isError, total } = useSelector((store) => {
     return store.ProductReducer;
   });
   const handleSort = (e) => {
@@ -58,7 +59,7 @@ const Destination = () => {
  },[order])
   useEffect(() => {
     
-    dispatch(getProducts(Obj));
+    dispatch(getReviews(Obj));
     
   }, [location.search]);
   
@@ -75,28 +76,19 @@ const Destination = () => {
           fontWeight= "bold"
           fontSize={{ base: "3xl", md:"5xl", lg: "5xl" }}
           
-          backgroundImage={"https://i.pinimg.com/originals/3b/fd/13/3bfd131d661215be9eb16819c8e8b34d.jpg"}
-          height={"300px"}
+          backgroundImage={"https://images.unsplash.com/photo-1531097517181-3de20fd3f05c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"}
+          height={"300px"}  
           backgroundPosition="center"
           backgroundSize="cover"
-        ><Text paddingTop={"100px"}>Destinations</Text>
+        ><Text paddingTop={"100px"}>Reviews</Text>
         </Heading>
         <Flex justifyContent={"space-between"}>
           <Box>
-          <Text marginTop={"100px"} marginLeft={"90px"} textAlign={"center"} fontSize={{ base: "3xl", md: "5xl" }} fontWeight="bold">
-                    Popular <Text as="span" color="#1071DB">Destination</Text>
+          <Text  marginTop={"100px"} marginLeft={"90px"} textAlign={"center"} fontSize={{ base: "3xl", md: "5xl" }} fontWeight="bold" >
+                    Reviews 
                 </Text>
           </Box>
-          <Box 
-            marginRight={"150px"}
-            marginTop={"110px"}
-          >
-            <Select placeholder='Select' fontSize={"xl"}  onChange={handleSort}>
-              <option value='asc'>Price:low to high</option>
-              <option value='desc'>Price:High to low</option>
-              
-            </Select>
-          </Box>
+          
         </Flex>
         {isLoading ? (
         <Box
@@ -129,9 +121,9 @@ const Destination = () => {
           }}
           columnGap="40px"
         >
-          {destinations.length > 0 &&
-            destinations.map((el) => {
-              return <Destinationcard key={el.id} {...el} id={el.id} type={"men"} />;
+          {reviews.length > 0 &&
+            reviews.map((el) => {
+              return <ReviewCard key={el.id} {...el} id={el.id} type={"men"} />;
             })}
         </Grid>
       )}
@@ -145,4 +137,4 @@ const Destination = () => {
   )
 }
 
-export default Destination
+export default Reviews

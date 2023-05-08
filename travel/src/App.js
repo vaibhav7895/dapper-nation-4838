@@ -16,12 +16,14 @@ import { FlightCompany } from "./Pages/FlightCompany";
 import { PassangerInfo } from "./Pages/PassangerInfo";
 
 
+
 function App() {
   const admin = useSelector((store) => {
     return store.AdminReducer.admin;
   });
   console.log(admin);
   return (
+
 
     <BrowserRouter>
       {!admin ? (
@@ -39,6 +41,7 @@ function App() {
           </Box>
         </div>
       )}
+
     </BrowserRouter>
 
 
