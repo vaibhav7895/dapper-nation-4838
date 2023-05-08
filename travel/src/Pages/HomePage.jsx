@@ -1,23 +1,40 @@
 import React from 'react'
 import { BsThreeDotsVertical } from "@chakra-ui/icons"
-import {Box,Image,SimpleGrid,Text,Container,Button,InputRightElement,} from "@chakra-ui/react";
-import { Avatar, AvatarBadge, AvatarGroup,WrapItem,Wrap } from '@chakra-ui/react'
+import {Box,Image,SimpleGrid,Text,Container,Button} from "@chakra-ui/react";
+import { Avatar,WrapItem,Wrap } from '@chakra-ui/react'
 
 
+// https://images.unsplash.com/photo-1543746746-46047c4f4bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fFRyYXZlbGluZyUyMGJhbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60
 
 function HomePage() {
   return (
     <>
-    <Box w="100%" border="2px solid yellow" backgroundImage="https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?b=1&s=170667a&w=0&k=20&c=0ptevX36IqBQM1P4PoCycpe8Vj-QAhITR7oNn9R991g="
-  backgroundRepeat="no-repeat"
-  backgroundSize="cover"
-  height={{base:"500px" ,md:"100vh"}}>
-    <Box> 
+    
+    <Box w="100%"  backgroundImage="https://images.unsplash.com/photo-1537387788952-cffe9f8d3090?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        backgroundRepeat="no-repeat"
+        backgroundSize="cover"
+        height={{base:"500px",md:"90vh"}}>
+    <Box pt="5%" > 
         <Text textAlign="center" color="#FB9216" fontSize={{base:"lg" ,md:"2xl"}}>Budget Travel. Rich Life</Text>
-        <Text textAlign="center" color="#ffff" fontSize={{base:"3xl" ,md:"5xl"}}  fontWeight={"bold"}>Enjoy The Best Moments</Text>
-        <Text textAlign="center" color="#ffff" fontSize={{base:"3xl" ,md:"5xl"}} fontWeight={"bold"}>With Outdoor Life</Text>
+        <Text textAlign="center" color="#1071DB" fontSize={{base:"3xl" ,md:"5xl"}}  fontWeight={"bold"}>Enjoy The Best Moments</Text>
+        <Text textAlign="center" color="#1071DB" fontSize={{base:"3xl" ,md:"5xl"}} fontWeight={"bold"}>With Outdoor Life</Text>
         <Text textAlign="center" color="#ffff" fontSize={{base:"md" ,md:"xl"}}>We have More Than 1 million Happy customer all around the world &</Text>
         <Text textAlign="center" color="#ffff" fontSize={{base:"md" ,md:"xl"}}>More Than 70+ destination around the globe.</Text>
+
+        <Box m="auto" w="80%" height={{base:"10vh",md:"20vh" }}  borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)">
+            <Box display="flex" pt="2%" >
+                <Button m="auto" fontWeight="bold"  w="20%" _hover={{ bg: "#1071DB" }}>✈Flights</Button>
+                <Button m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🏚Hotels</Button>
+                <Button m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🚗Transports</Button>
+            </Box>
+            
+            {/* <Box w='90%' mt='3%' display="flex" m="auto" bgColor="white" >
+                <Text>From</Text>
+                <Text>To</Text>
+                <Text>Expected Date</Text>
+                <Text>Search Flights</Text>
+            </Box> */}
+        </Box>
     </Box>
        
     </Box>
@@ -580,12 +597,8 @@ function HomePage() {
            
       
        
-       
-     
   
        </Box>
-
-
 
         </Box>
      
