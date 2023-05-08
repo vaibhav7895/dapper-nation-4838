@@ -37,12 +37,12 @@ export const Download = () => {
             </div>
             <img
               style={{
-                width: "100px",
-                height: "100px",
+                width: "200px",
+                height: "200px",
                 borderRadius: "10px",
               }}
 
-              style={{ width: "200px", height: "200px", borderRadius: "10px" }}
+              
 
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTohXMmn4t3aKSiNr6fl-vcE53wLrp1Cb6JSQ&usqp=CAU"
               alt=""
