@@ -5,10 +5,11 @@ Deployed-Link- [https://travel-lovat-eight.vercel.app/]
 
 Travel.com is a hotel booking website where user can book different holiday packages and flights and cars bookings across the different paart of the world.
 ## Screenshots:
-![Screenshot 2023-05-09 190007](https://github.com/vaibhav7895/dapper-nation-4838/assets/94694221/c0da8c59-1424-4f61-a118-ed2ebb3ff556)
-![Screenshot 2023-05-09 190033](https://github.com/vaibhav7895/dapper-nation-4838/assets/94694221/5ee55a56-5326-456b-a5cd-7419d2218ef2)
-![Screenshot 2023-05-09 190111](https://github.com/vaibhav7895/dapper-nation-4838/assets/94694221/0ae7d8d2-7b76-4a7a-9318-5b5488445c0d)
-![Screenshot 2023-05-09 190147](https://github.com/vaibhav7895/dapper-nation-4838/assets/94694221/6d2ffcba-8b83-49bc-bf1b-d499049d139d)
+
+![Screenshot 2023-05-09 190011](https://github.com/vaibhav7895/dapper-nation-4838/assets/94694221/c263028c-f257-46b3-8c4d-94fee4ad435c)
+![Screenshot 2023-05-09 190033](https://github.com/vaibhav7895/dapper-nation-4838/assets/94694221/65f45339-db25-4b0c-ace5-0d57f047f5d9)
+![Screenshot 2023-05-09 190111](https://github.com/vaibhav7895/dapper-nation-4838/assets/94694221/22e2572e-f98f-4f6d-b6bd-3a541cc68d9e)
+![Screenshot 2023-05-09 190147](https://github.com/vaibhav7895/dapper-nation-4838/assets/94694221/e9495158-4347-470a-9806-0b5ca87f9521)
 
 
 ## Authors
