@@ -9,7 +9,7 @@ const Dashboard = () => {
    const [edit,setedit]=useState("")
    const dispatch=useDispatch()
   const getdata=()=>{
-  axios.get(`http://localhost:8080/Destinations`).then((res)=>{
+  axios.get(`https://travel-com.onrender.com/Destinations`).then((res)=>{
       setfulldata(res.data)
     })
    
@@ -19,7 +19,7 @@ const Dashboard = () => {
   },[])
   console.log(fulldata)
   const handledelete=(id)=>{
-    axios.delete(`http://localhost:8080/Destinations/${id}`).then((res)=>{
+    axios.delete(`https://travel-com.onrender.com/Destinations/${id}`).then((res)=>{
       const newdata=fulldata.filter((item,index)=>{
         if(id!=item.id){
           return item

@@ -12,7 +12,7 @@ import {
   export const SignUpFunc = (payload) => (dispatch) => {
     dispatch({ type: SIGNUP_REQUEST });
     axios
-      .post("http://localhost:8080/registeredUser", payload)
+      .post("https://travel-com.onrender.com/registeredUser", payload)
       .then((response) => {
         dispatch({ type: SIGNUP_SUCCESS});
         
@@ -26,7 +26,7 @@ import {
   export const getdata = (dispatch) => {
     
     axios
-    .get("http://localhost:8080/registeredUser").then((res)=>{
+    .get("https://travel-com.onrender.com/registeredUser").then((res)=>{
       
       dispatch({ type: SIGNIN_REQUEST, payload: res.data });
     }).catch(()=>{

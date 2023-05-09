@@ -21,7 +21,7 @@ const Destinationcard = ({id,City,Country,Duration,Price,Ratings,images}) => {
   };
   const handleClick = (id) => {
     axios
-      .post(`http://localhost:8080/Cart`, el)
+      .post(`https://travel-com.onrender.com/Cart`, el)
       .then((res) => {
         toast({
           title: "Added to cart",
