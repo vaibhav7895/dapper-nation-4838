@@ -3,7 +3,7 @@ import axios from "axios"
 
 export const getProducts=(paramObj)=>(dispatch)=>{
  dispatch({type:REQUEST_PENDING})
- axios.get(`http://localhost:8080/Destinations?_limit=8`,paramObj).then((res)=>{
+ axios.get(`https://travel-com.onrender.com/Destinations?_limit=8`,paramObj).then((res)=>{
     let obj={
         data:res.data,
         total:res.headers.get("X-Total-Count")
@@ -16,7 +16,7 @@ export const getProducts=(paramObj)=>(dispatch)=>{
 
 export const getReviews=(paramObj)=>(dispatch)=>{
     dispatch({type:REQUEST_PENDING})
-    axios.get(`http://localhost:8080/reviews?_limit=8`,paramObj).then((res)=>{
+    axios.get(`https://travel-com.onrender.com/reviews?_limit=8`,paramObj).then((res)=>{
        let obj={
            data:res.data,
            total:res.headers.get("X-Total-Count")

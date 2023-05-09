@@ -107,7 +107,7 @@ import {
     useEffect(() => {
       axios
   
-        .get("http://localhost:8080/registeredUser")
+        .get("https://travel-com.onrender.com/registeredUser")
         .then((response) => {
           setUserObj(response.data);
         })

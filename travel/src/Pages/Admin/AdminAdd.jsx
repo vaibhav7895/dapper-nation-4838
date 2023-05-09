@@ -20,7 +20,7 @@ const AdminAdd = () => {
    }
    const handlepost=()=>{
     const newdata=add
-    axios.post(`http://localhost:8080/Destinations`,newdata).then((res)=>{
+    axios.post(`https://travel-com.onrender.com/Destinations`,newdata).then((res)=>{
        console.log("post succesfull")
        alert("POST Successfull")
        setadd(init)

@@ -29,7 +29,7 @@ function HomePage() {
         <Text textAlign="center" color="#ffff" fontSize={{base:"md" ,md:"xl"}}>We have More Than 1 million Happy customer all around the world &</Text>
         <Text textAlign="center" color="#ffff" fontSize={{base:"md" ,md:"xl"}}>More Than 70+ destination around the globe.</Text>
 
-        <Box m="auto" w="80%" height={{base:"10vh",md:"20vh" }}  borderRadius="5%" >bgColor="rgba(255, 255, 255, 0.300)"
+        <Box m="auto" w="80%" height={{base:"10vh",md:"20vh" }}  borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" >
             <Box display="flex" pt="2%" >
             
                 <Button  m="auto" fontWeight="bold"  w="20%" _hover={{ bg: "#1071DB" }}>
