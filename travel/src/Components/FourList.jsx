@@ -1,10 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export const FourList = ({ h1, heading, allDivsArr }) => {
   const navigate=useNavigate()
-
+  let auth= useSelector((store) => store.AuthReducer.isAuth); 
   const handleClick=()=>{
     navigate("/flightBooking")
   }
@@ -72,7 +73,7 @@ export const FourList = ({ h1, heading, allDivsArr }) => {
                       style={{ fontSize: "20px", color: "#0c264c" }}
                     >{`$${item.price}`}</span>
                   </h2>
-                  <button
+                  {auth?<button
                     id="findmorebtn"
                     style={{
                       border: "2px solid #1071db",
@@ -84,7 +85,19 @@ export const FourList = ({ h1, heading, allDivsArr }) => {
                     onClick={handleClick}
                   >
                     Book Now
-                  </button>
+                  </button>:<Link to="/login"><button
+                    id="findmorebtn"
+                    style={{
+                      border: "2px solid #1071db",
+                      padding: "5px",
+                      borderRadius: "20px",
+                      paddingRight: "10px",
+                      paddingLeft: "10px",
+                    }}
+                    
+                  >
+                    Book Now
+                  </button></Link>}
                 </div>
               </div>
             </div>

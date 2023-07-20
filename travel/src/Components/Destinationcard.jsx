@@ -5,8 +5,11 @@ Flex,
 Heading,
 Text,Button, Grid, useToast,} from "@chakra-ui/react"
 import axios from "axios"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 const Destinationcard = ({id,City,Country,Duration,Price,Ratings,images}) => {
+    let auth = useSelector((store) => store.AuthReducer.isAuth);
+    
     const navigate=useNavigate()
     const toast = useToast();
   let el = {
@@ -19,7 +22,7 @@ const Destinationcard = ({id,City,Country,Duration,Price,Ratings,images}) => {
     images,
     
   };
-  const handleClick = (id) => {
+  let handleClick = (id) => {
     axios
       .post(`https://travel-com.onrender.com/Cart`, el)
       .then((res) => {
@@ -64,7 +67,10 @@ const Destinationcard = ({id,City,Country,Duration,Price,Ratings,images}) => {
                                     </Text>
                                 <   Box display="flex" justifyContent="space-between">
                                     <Text fontSize={{ base: "sm", md: "xl" }} fontWeight="bold" color="black">${Price}</Text>
-                                    <Button onClick={handleClick} w="40%" height="25px" mr={"10px"} fontSize={{ base: "sm", md: "xl" }} background={""} color="#fff" border="1px solid #1071DB" _hover={{ bg: "blue.500" }}>Book Now</Button>
+                                    {auth ?<Button onClick={handleClick} w="40%" height="25px" mr={"10px"} fontSize={{ base: "sm", md: "xl" }} background={""} color="#fff" border="1px solid #1071DB" _hover={{ bg: "blue.500" }}>Book Now</Button>:
+                                    
+                                    <Link to="/login" >
+                                    <Button w="70%" height="25px" mr={"10px"} fontSize={{ base: "sm", md: "xl" }} background={""} color="#fff" border="1px solid #1071DB" _hover={{ bg: "blue.500" }}>Book Now</Button> </Link>}
                                 </Box>
                             </Grid>
 
