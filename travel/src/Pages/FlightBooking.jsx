@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import { Box, Container, Heading, Flex } from "@chakra-ui/react";
 import { BookingBar } from "../Components/BookingBar";
 import { FourList } from "../Components/FourList";
 import { ThreeSteps } from "../Components/ThreeSteps";
@@ -8,12 +8,12 @@ import flightimage from "../image/p1.jpg";
 import { useNavigate } from "react-router-dom";
 
 export const FlightBooking = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
-  const handleClick=()=>{
-    navigate("/passengerinfo")
-  }
-  // making a object for international flights data to pass it to FourList component
+  const handleClick = () => {
+    navigate("/passengerinfo");
+  };
+
   const international = {
     h1: "Top",
     heading: "International Airlines",
@@ -87,7 +87,6 @@ export const FlightBooking = () => {
     three: "Customize Book",
     data1:
       " offers a hassle-free holiday wherein all your travel needs are taken care of. Be it your accommodation in comfortable hotels, convenient transfers.",
-
     data2:
       " specific preferences, if any, on hotels, kind of holiday, etc. and MakeMyTrip offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs.",
     data3:
@@ -95,40 +94,29 @@ export const FlightBooking = () => {
   };
 
   return (
-    <DIV>
-      <h1 id="heading" style={{ paddingTop: "130px" }}>
+    <Flex direction="column" align="center">
+      <Box
+        bg={`url(${flightimage})`}
+        bgSize="cover"
+        width="100%"
+        height="40vh"
+        textAlign="center"
+        fontSize="50px"
+        fontWeight="700"
+        padding="30px"
+        color="white"
+      >
         Flight Booking
-      </h1>
-      <div  id="MainDiv" style={{ marginLeft: "18vh", marginRight: "18vh" }}>
-        {/* heading */}
-        {/* booking bar */}
+      </Box>
+      <Container mt="10" maxW="container.lg">
         <BookingBar />
-        {/* flight details */}
-        <FourList   {...international} />
-        <FourList onClick={handleClick}{...FightDeals} />
+        <FourList {...international} />
+        <FourList onClick={handleClick} {...FightDeals} />
         <ThreeSteps {...threestepsdata} />
         <Download />
-      </div>
-    </DIV>
+      </Container>
+    </Flex>
   );
 };
 
-const DIV = styled.div`
-  #MainDiv {
-    font-family: "Poppins", sans-serif;
-    font-family: "Roboto", sans-serif;
-    /* border: 1px solid red; */
-  }
-  #heading {
-    background-image: url(${flightimage});
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 700;
-    padding: 30px;
-    color: white;
-    /* border: 1px solid black; */
-  }
-`;
+export default FlightBooking;
