@@ -40,7 +40,16 @@ const AdminAdd = () => {
         <FormLabel>Price</FormLabel>
         <Input placeholder='Price'  name='Price'value={add.Price} onChange={handlechange}/>
         <FormLabel>Rating</FormLabel>
-        <Input placeholder='Rating'  name="Ratings"value={add.Ratings} onChange={handlechange}/>
+        {/* <Input placeholder='Rating'  name="Ratings"value={add.Ratings} onChange={handlechange}/> */}
+        <select name="Ratings"value={add.Ratings} onChange={handlechange} style={{width:"100%",border:"1px solid gray"}}>
+          <option value="">Select</option>
+          <option value="⭐">⭐</option>
+          <option value="⭐⭐">⭐⭐</option>
+          <option value="⭐⭐⭐">⭐⭐⭐</option>
+          <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+          <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+
+        </select>
         <FormLabel>Image</FormLabel>
         <Input placeholder='images'  name="images"value={add.images} onChange={handlechange}/>
         <Button style={{backgroundColor:"teal",marginTop:"20px"}} onClick={handlepost}>POST</Button>

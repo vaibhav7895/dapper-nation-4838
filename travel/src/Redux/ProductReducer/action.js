@@ -26,3 +26,18 @@ export const getReviews=(paramObj)=>(dispatch)=>{
            dispatch({type:REQUEST_FAILURE})
        })
    }
+
+
+//    export const postProducts=(obj)=>(dispatch)=>{
+//     dispatch({type:REQUEST_PENDING})
+//     axios.post(`https://travel-com.onrender.com/Destinations`,obj).then((res)=>{
+//        let obj={
+//            data:res.data,
+//            total:res.headers.get("X-Total-Count")
+//        }
+//        dispatch({type:PRODUCT_REQUEST_SUCCESS,payload:obj})
+//        }).catch(()=>{
+//            dispatch({type:REQUEST_FAILURE})
+//        })
+//    }
+   

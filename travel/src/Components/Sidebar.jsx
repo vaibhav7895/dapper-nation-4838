@@ -94,7 +94,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
     { name: 'Dashboard', icon:FiGrid,path:"/Dashboard" },
     { name: "Add", icon: FiArrowRightCircle,path:"/Add" },
     { name: 'About', icon: FiCompass,path:"/About" },
-    { name: `Edit`, icon: FiCompass,path: `Edit/:${+id}`},
+   
     { name: 'Favourites', icon: FiStar,path:"/Favourites" },
     { name: 'Settings', icon: FiSettings,path:"/Settings" },
     

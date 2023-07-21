@@ -10,8 +10,10 @@ import { useNavigate } from 'react-router-dom';
 // https://images.unsplash.com/photo-1543746746-46047c4f4bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fFRyYXZlbGluZyUyMGJhbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60
 
 function HomePage() {
-
-    
+    const navigate=useNavigate()
+    const handlenavigate=()=>{
+         navigate("/flightCompany")
+    }
    
   return (
     <>
@@ -32,14 +34,14 @@ function HomePage() {
         <Box m="auto" w="80%" height={{base:"10vh",md:"20vh" }}  borderRadius="5%" bgColor="rgba(255, 255, 255, 0.300)" >
             <Box display="flex" pt="2%" >
             
-                <Button  m="auto" fontWeight="bold"  w="20%" _hover={{ bg: "#1071DB" }}>
+                <Button onClick={handlenavigate}  m="auto" fontWeight="bold"  w="20%" _hover={{ bg: "#1071DB" }}>
                     
                     ✈Flights
                    
                     </Button>
                     
-                <Button  m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🏚Hotels</Button>
-                <Button m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🚗Transports</Button>
+                <Button onClick={handlenavigate}   m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🏚Hotels</Button>
+                <Button onClick={handlenavigate} m="auto" fontWeight="bold" w="20%" _hover={{ bg: "#1071DB" }}>🚗Transports</Button>
             </Box>
             
             {/* <Box w='90%' mt='3%' display="flex" m="auto" bgColor="white" >

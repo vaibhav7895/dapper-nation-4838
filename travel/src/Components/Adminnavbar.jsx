@@ -39,14 +39,14 @@ export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
- const navigate=useNavigate()
-  const dispatch=useDispatch()
-  const admin=useSelector((store)=>{
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const admin = useSelector((store) => {
     return store.ProductReducer.admin
   })
-  const handlelogout=()=>{
-     dispatch({type:LOGOUT})
-     navigate("/")
+  const handlelogout = () => {
+    dispatch({ type: LOGOUT })
+    navigate("/")
   }
   return (
     <>
