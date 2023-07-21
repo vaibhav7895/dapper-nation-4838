@@ -28,7 +28,7 @@ const Dashboard = () => {
   }
   useEffect(() => {
     getdata()
-  }, [])
+  }, [fulldata])
   console.log(fulldata)
   const handledelete = (id) => {
     axios.delete(`https://travel-com.onrender.com/Destinations/${id}`).then((res) => {
@@ -41,8 +41,9 @@ const Dashboard = () => {
     })
   }
   const handleeditdata = () => {
+    let newid= +itemlocal.id
     let obj = {
-      id: +itemlocal.id,
+      
       images: itemlocal.images
     }
     if (City) {
@@ -72,19 +73,19 @@ const Dashboard = () => {
     }
 
 
-    // axios.patch(`https://travel-com.onrender.com/Destinations/${newid}`, obj).then((res) => {
-    //   alert("data patched")
-    // }).catch((err)=>{
-    //   alert(err)
-    // })
-    console.log(obj)
-    fulldata.map((el, index) => {
-      if (+el.id == +newid) {
-        el = obj
-      }
+    axios.patch(`https://travel-com.onrender.com/Destinations/${newid}`, obj).then((res) => {
+      console.log(res.data)
+    }).catch((err)=>{
+      alert(err)
     })
-    setnewdata(fulldata)
-    //setfulldata(fulldata)
+  //   console.log(obj)
+  //  let newdata= fulldata.map((el, index) => {
+  //     if (+el.id == +newid) {
+  //       el = obj
+  //     }
+  //   })
+    //setnewdata(newdata)
+    //setfulldata(newdata)
     onClose()
 
 
