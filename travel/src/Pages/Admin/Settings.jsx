@@ -2,7 +2,8 @@ import React from 'react'
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+   
+    <img width={"100%"} src="https://www.shutterstock.com/image-vector/computer-technician-wrench-repairing-screen-260nw-1303423885.jpg" alt="" />
   )
 }
 
