@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import flightimage from "../image/p1.jpg";
 import { MakeABooking } from "../Components/MakeABooking";
@@ -7,9 +7,43 @@ import { useNavigate } from "react-router-dom";
 
 export const PassangerInfo = () => {
   const data = JSON.parse(localStorage.getItem("price")) || {};
+  const [local, setlocal] = useState({})
+  const [gender, setgender] = useState("")
+  const [title, settitle] = useState("")
+  const [name, setname] = useState("")
+  const [surname, setsurname] = useState("")
+  const [day, setday] = useState("")
+  const [month, setmonth] = useState("")
+  const [year, setyear] = useState("")
+  const [country, setcountry] = useState("")
+  const [name1, setname1] = useState("")
+  const [lastname, setlastname] = useState("")
+  const [email, setemail] = useState("")
+  const [number, setnumber] = useState("")
   console.log(data);
-  const navigate=useNavigate()
-  const handleClick=()=>{
+  const navigate = useNavigate()
+  const handleClick = () => {
+    let obj = {
+      gender,
+      title,
+      name,
+      surname,
+      day,
+      month,
+      year,
+      country,
+      name1,
+      lastname,
+      email,
+      number
+    }
+    for (let key in obj) {
+      if (obj[key] === "") {
+        alert("Please fill all the Details")
+        return
+      }
+    }
+    alert("Proceed To payment")
     navigate("/payments")
   }
   return (
@@ -42,7 +76,76 @@ export const PassangerInfo = () => {
                   Passengers Details: <span>Adult</span>
                 </span>
               </h2>
-              <Details />
+              {/* <Details /> */}
+              {/*  */}
+              <BOX style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <div id="maininfo" >
+                  <div style={{display:"flex"}}>
+                    <h2 className="readables">Gender</h2>
+                    <h2 className="readables">Title</h2>
+                    <h2 className="readables">Name</h2>
+                    <h2 className="readables">Surname</h2>
+                  </div>
+
+                  <select className="inputs" value={gender} onChange={(e) => setgender(e.target.value)}>
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <select className="inputs" value={title} onChange={(e) => settitle(e.target.value)}>
+                    <option value="">Select</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                  </select>
+                  <input type="text" className="inputs" value={name} onChange={(e) => setname(e.target.value)} />
+                  <input type="text" className="inputs" value={surname} onChange={(e) => setsurname(e.target.value)} />
+                </div>
+
+                <h2 className="readables">Date Of Birth</h2>
+                <div id="dob">
+                  <select className="inputs" value={day} onChange={(e) => setday(e.target.value)}>
+                    <option value="1">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <select className="inputs" value={month} onChange={(e) => setmonth(e.target.value)}>
+                    <option value="">Month</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <select className="inputs" value={year} onChange={(e) => setyear(e.target.value)}>
+                    <option value="1">Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                  </select>
+                </div>
+                <h2 className="readables">Nationality</h2>
+                <select className="inputs" style={{ width: "200px" }} value={country} onChange={(e) => setcountry(e.target.value)}>
+                  <option value="">Select</option>
+                  <option value="Indian">India</option>
+                  <option value="American">America</option>
+                  <option value="British">British</option>
+                  <option value="Australian">Australian</option>
+                  <option value="Canadian">Canadian</option>
+                </select>
+                {/* <h2 className="readables">Other Services</h2>
+      <select
+        style={{ width: "300px", marginBottom: "20px" }}
+        className="inputs"
+      >
+        <option value="">Select</option>
+      </select> */}
+              </BOX>
+
+              {/*  */}
 
               <h2 className="heading">
                 1.{" "}
@@ -184,8 +287,8 @@ export const PassangerInfo = () => {
               >
                 <h2 className="readables">Name</h2>
                 <h2 className="readables">Surname</h2>
-                <input type="text" className="inputs" />
-                <input type="text" className="inputs" />
+                <input type="text" className="inputs" value={name1} onChange={(e) => setname1(e.target.value)} />
+                <input type="text" className="inputs" value={lastname} onChange={(e) => setlastname(e.target.value)} />
               </div>
               <div
                 style={{
@@ -196,8 +299,8 @@ export const PassangerInfo = () => {
               >
                 <h2 className="readables">Phone Number</h2>
                 <h2 className="readables">Email</h2>
-                <input type="number" className="inputs" placeholder="+91" />
-                <input type="email" className="inputs" />
+                <input type="number" className="inputs" placeholder="+91" value={number} onChange={(e) => setnumber(e.target.value)} />
+                <input type="email" className="inputs" value={email} onChange={(e) => setemail(e.target.value)} />
               </div>
             </form>
           </div>
@@ -296,5 +399,37 @@ const DIV = styled.div`
   }
   .medium {
     font-size: 20px;
+  }
+`;
+
+
+const BOX = styled.div`
+  #maininfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+    column-gap: 15px;
+  }
+  .inputs {
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 600;
+  }
+  select {
+    color: gray;
+  }
+  .inputs:focus {
+    outline: none;
+  }
+  .readables {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  #dob {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
   }
 `;
