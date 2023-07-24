@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import flightimage from "../image/p1.jpg";
 import { MakeABooking } from "../Components/MakeABooking";
@@ -11,14 +11,33 @@ import { useControllableState, useToast } from "@chakra-ui/react";
 
 export const Payments = () => {
   const navigate=useNavigate()
+  const [atmnumber,setatmnumber]=useState("")
+  const [passangername,setpassangername]=useState("")
+  const [expry,setexpry]=useState("")
+  const [country,setcountry]=useState("")
+  const [cvv,setcvv]=useState("")
   const toast=useToast()
   const handleClick=()=>{
     navigate("/booking")
   }
   const handlebutton=()=>{
-    setTimeout(()=>{
-      navigate("/")
-    },1000)
+    const obj={
+      atmnumber:atmnumber,
+       passangername,
+       expry,
+       country,
+       cvv
+
+    }
+    for(let key in obj){
+         if(obj[key]==""){
+          alert("Please fill all the Details")
+          return
+         }
+    }
+    console.log(obj)
+   
+   
     
     toast({
       title: `Payment Successful`,
@@ -27,6 +46,10 @@ export const Payments = () => {
       position: "top",
       isClosable: true,
     });;
+    setTimeout(()=>{
+      alert("Flight Booked")
+      navigate("/")
+    },1000)
   }
   return (
     <DIV>
@@ -76,14 +99,14 @@ export const Payments = () => {
                   className="inputs"
                   style={{ display: "grid", gridTemplateColumns: "4fr 1fr" }}
                 >
-                  <input type="number" placeholder="Eg:-81747968164986489" />
+                  <input type="text" placeholder="Eg:-81747968164986489" value={atmnumber} onChange={(e)=>setatmnumber(e.target.value)} />
                   <img
                     style={{ width: "180px" }}
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7J3RCeNfJYDsLoQvrFswRT1EUPjVjYzwIw&usqp=CAU"
                     alt=""
                   />
                 </div>
-                <input type="text" className="inputs" placeholder="Eg:-Ravi" />
+                <input type="text" className="inputs" placeholder="Eg:-Ravi" value={passangername} onChange={(e)=>setpassangername(e.target.value)} />
               </div>
               <div
                 style={{
@@ -100,9 +123,10 @@ export const Payments = () => {
                   type="text"
                   className="inputs"
                   placeholder="Eg:-06/2022"
+                  value={expry} onChange={(e)=>setexpry(e.target.value)}
                 />
-                <input type="text" className="inputs" placeholder="Eg:-123" />
-                <input type="text" className="inputs" placeholder="Eg:-India" />
+                <input type="text" className="inputs" placeholder="Eg:-123" value={cvv} onChange={(e)=>setcvv(e.target.value)}/>
+                <input type="text" className="inputs" placeholder="Eg:-India" value={country} onChange={(e)=>setcountry(e.target.value)}/>
               </div>
             </div>
             <h2
