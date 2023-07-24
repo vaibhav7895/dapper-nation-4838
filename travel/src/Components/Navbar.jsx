@@ -8,7 +8,7 @@ import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHea
 import { useDisclosure } from '@chakra-ui/hooks'
 import { Box, Divider } from '@chakra-ui/layout'
 import { Input } from '@chakra-ui/input'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { SIGNIN_SUCCESS_ADMIN } from '../Redux/AdminReducer/actiontype'
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -22,6 +22,9 @@ const Navbar = () => {
   const [password,setPassword]=useState("")
   const dispatch=useDispatch()
   const navigate=useNavigate()
+  let {isAuth,afterLoginUser,} = useSelector((store) => store.AuthReducer);
+  console.log(isAuth,afterLoginUser)
+    
   const handleemail=(e)=>{
     setEmail(e.target.value)
      
@@ -108,7 +111,7 @@ const Navbar = () => {
           
           <Link to={"/signup"}>
             <li className='user'>
-              <FontAwesomeIcon icon={faUser} />
+              {!isAuth?<FontAwesomeIcon icon={faUser} />:afterLoginUser.name}
             </li>
           </Link>
         </ul>

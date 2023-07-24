@@ -6,6 +6,7 @@ import phone from "../image/iphone.png"
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // https://images.unsplash.com/photo-1543746746-46047c4f4bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fFRyYXZlbGluZyUyMGJhbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60
 
@@ -14,7 +15,7 @@ function HomePage() {
     const handlenavigate=()=>{
          navigate("/flightCompany")
     }
-   
+    
   return (
     <>
 
